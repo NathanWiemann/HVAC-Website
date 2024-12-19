@@ -1,0 +1,33 @@
+---
+const benefits = [
+  {
+    title: "Improved Efficiency",
+    description: "A clean system uses less energy, saving you money on utility bills."
+  },
+  {
+    title: "Enhanced Air Quality",
+    description: "Removing dust, allergens, and debris ensures your air is fresh and healthy."
+  },
+  {
+    title: "Extended System Lifespan",
+    description: "Regular cleaning reduces wear and tear, helping your system last longer."
+  },
+  {
+    title: "Better Cooling Performance",
+    description: "Clean components provide consistent, powerful cooling throughout your space."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Regular Air Conditioning Cleaning is Important</h2>
+  
+  <div class="grid md:grid-cols-2 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

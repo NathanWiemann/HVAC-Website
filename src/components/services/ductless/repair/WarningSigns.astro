@@ -1,0 +1,37 @@
+---
+const signs = [
+  {
+    title: "Inconsistent Performance",
+    description: "Uneven heating or cooling throughout your space"
+  },
+  {
+    title: "Strange Noises",
+    description: "Unusual sounds during system operation"
+  },
+  {
+    title: "Water Leaks",
+    description: "Visible leaks or puddles near the unit"
+  },
+  {
+    title: "High Energy Bills",
+    description: "Unexpected increases in energy consumption"
+  },
+  {
+    title: "Poor Airflow",
+    description: "Reduced air output from indoor units"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need Ductless HVAC Repair</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

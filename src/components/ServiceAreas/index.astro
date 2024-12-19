@@ -1,0 +1,18 @@
+---
+import LocationList from './LocationList.astro';
+
+const locations = [
+  "Reading", "Wyomissing", "Fleetwood", "Kutztown", "Boyertown",
+  "Hamburg", "Leesport", "Sinking Spring", "Birdsboro", "West Reading"
+];
+---
+
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">Serving All of Berks County, PA</h2>
+    <p class="text-lg text-gray-600 text-center mb-8">
+      Professional heating and cooling services throughout Berks County
+    </p>
+    <LocationList locations={locations} />
+  </div>
+</section>

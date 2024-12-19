@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Certified Technicians",
+    description: "Our team is fully certified and experienced in all types of heat pump systems"
+  },
+  {
+    title: "Energy-Efficient Solutions",
+    description: "We specialize in systems that reduce energy consumption and lower utility bills"
+  },
+  {
+    title: "24/7 Emergency Service",
+    description: "Available around the clock for urgent heat pump repairs"
+  },
+  {
+    title: "Comprehensive Care",
+    description: "Complete solutions for installation, maintenance, and repairs"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Us for Heat Pump Services?</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

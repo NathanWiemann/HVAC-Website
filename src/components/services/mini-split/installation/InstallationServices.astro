@@ -1,0 +1,45 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const services = [
+  {
+    title: "Residential Mini-Split Installation",
+    description: "Transform your home's comfort with customized mini-split solutions perfect for single rooms or entire homes."
+  },
+  {
+    title: "Commercial Mini-Split Installation",
+    description: "Professional installation services for offices, retail spaces, and other commercial properties."
+  },
+  {
+    title: "Mini-Split Heat Pump Installation",
+    description: "Versatile heating and cooling solutions for year-round comfort and efficiency."
+  },
+  {
+    title: "Energy-Efficient Systems",
+    description: "Installation of high-efficiency mini-splits to help reduce energy costs."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mini-Split Installation Services</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Mini-Split Installation Services" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 gap-6">
+    {services.map(service => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+        <p class="text-gray-600">{service.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,58 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/cooling/repair/MainContent.astro';
+import RepairSigns from '../../../../components/services/cooling/repair/RepairSigns.astro';
+import WhyChooseUs from '../../../../components/services/cooling/repair/WhyChooseUs.astro';
+import RepairServices from '../../../../components/services/cooling/repair/RepairServices.astro';
+import MaintenanceSection from '../../../../components/services/cooling/repair/MaintenanceSection.astro';
+import RepairProcess from '../../../../components/services/cooling/repair/RepairProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/cooling/repair/FAQ.astro';
+import ServiceAreas from '../../../../components/services/cooling/repair/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality HVAC repair images
+const heroImage = "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const repairImage = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const maintenanceImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Professional Air Conditioner Repair in Berks County, PA"
+  description="Fast, reliable, and affordable A/C repairs to restore your comfort. Available 24/7 for emergency service throughout Berks County."
+>
+  <Hero
+    title="Professional Air Conditioner Repair in Berks County, PA"
+    description="Fast, Reliable, and Affordable A/C Repairs to Restore Your Comfort"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <RepairSigns />
+    <WhyChooseUs />
+    <RepairServices phone={phone} />
+    <MaintenanceSection image={maintenanceImage} />
+    <RepairProcess image={repairImage} />
+    <ContactForm 
+      title="Request Your A/C Repair Today"
+      subtitle="Get Fast and Reliable A/C Repair Services"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Don't Sweat It—Call the A/C Repair Specialists in Berks County!"
+      description="Whether you need emergency service, routine maintenance, or expert troubleshooting, our team is here to help."
+      buttonText="Schedule Service Now"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

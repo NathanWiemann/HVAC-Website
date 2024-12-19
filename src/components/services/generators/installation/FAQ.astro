@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "What type of generator is best for my home?",
+    description: "The best generator depends on your power needs. A whole house generator is ideal for powering your entire home, while a portable generator works well for smaller setups."
+  },
+  {
+    question: "How long does generator installation take?",
+    description: "Most installations can be completed in a single day, though complex systems may take longer."
+  },
+  {
+    question: "Do you install natural gas generators?",
+    description: "Yes, we specialize in natural gas generator installations, offering reliable and energy-efficient options."
+  },
+  {
+    question: "Do you offer maintenance services?",
+    description: "Yes, we provide comprehensive maintenance services to ensure your generator remains in top condition."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

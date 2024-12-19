@@ -1,0 +1,32 @@
+---
+const plans = [
+  {
+    title: "Scheduled Maintenance",
+    description: "Regular inspections and tune-ups to keep your system in top shape"
+  },
+  {
+    title: "Priority Service",
+    description: "Get immediate attention when unexpected issues arise"
+  },
+  {
+    title: "Repair Discounts",
+    description: "Exclusive savings on repairs and replacement parts"
+  }
+];
+---
+
+<section class="mb-16 bg-gray-50 p-8 rounded-lg">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Preventative Maintenance Plans</h2>
+  <p class="text-lg text-gray-600 mb-8">
+    We offer convenient AC maintenance plans designed to take the guesswork out of system upkeep.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    {plans.map(plan => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{plan.title}</h3>
+        <p class="text-gray-600">{plan.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,56 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/generators/cleaning/MainContent.astro';
+import CleaningServices from '../../../../components/services/generators/cleaning/CleaningServices.astro';
+import WarningSigns from '../../../../components/services/generators/cleaning/WarningSigns.astro';
+import WhyChooseUs from '../../../../components/services/generators/cleaning/WhyChooseUs.astro';
+import CleaningProcess from '../../../../components/services/generators/cleaning/CleaningProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/generators/cleaning/FAQ.astro';
+import ServiceAreas from '../../../../components/services/generators/cleaning/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality generator cleaning images
+const heroImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const cleaningImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const serviceImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+---
+
+<Layout
+  title="Generator Cleaning Services in Berks County, PA"
+  description="Professional generator cleaning services to maintain optimal performance. Expert cleaning for all types of generators throughout Berks County."
+>
+  <Hero
+    title="Generator Cleaning Services in Berks County, PA"
+    description="Ensure Reliable Power with Professional Generator Cleaning"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <CleaningServices image={cleaningImage} />
+    <WarningSigns />
+    <WhyChooseUs />
+    <CleaningProcess image={serviceImage} />
+    <ContactForm 
+      title="Schedule Your Generator Cleaning Today"
+      subtitle="Keep Your Generator Running Like New"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Extend the Life of Your Generator with Professional Cleaning"
+      description="Don't let dirt and debris compromise your generator's performance. Contact us today for expert cleaning services."
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

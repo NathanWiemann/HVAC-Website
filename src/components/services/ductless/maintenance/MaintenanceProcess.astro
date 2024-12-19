@@ -1,0 +1,46 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const steps = [
+  {
+    title: "System Inspection",
+    description: "Thorough assessment of all components"
+  },
+  {
+    title: "Performance Testing",
+    description: "Evaluate efficiency and operation"
+  },
+  {
+    title: "System Tune-Up",
+    description: "Adjust and optimize performance"
+  },
+  {
+    title: "Final Review",
+    description: "Document findings and recommendations"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Maintenance Process</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Ductless HVAC Maintenance Process" class="w-full h-64 object-cover" />
+    </div>
+  )}
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How often should I clean my air conditioner?",
+    answer: "We recommend scheduling cleaning at least once a year, preferably before the summer season begins."
+  },
+  {
+    question: "What are the benefits of AC coil cleaning?",
+    answer: "Clean coils improve heat transfer, making your system more efficient and reducing energy costs."
+  },
+  {
+    question: "Do you offer cleaning for ductless systems?",
+    answer: "Yes! We provide thorough cleaning for ductless systems, ensuring both indoor and outdoor units operate at peak performance."
+  },
+  {
+    question: "Is professional cleaning better than DIY?",
+    answer: "Absolutely. Our professional cleaning ensures a deep, effective clean that DIY methods can't achieve."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

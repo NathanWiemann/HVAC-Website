@@ -1,0 +1,16 @@
+---
+import FAQItem from './FAQItem.astro';
+import type { FAQ } from '../../types/faq';
+
+interface Props {
+  faqs: FAQ[];
+}
+
+const { faqs } = Astro.props;
+---
+
+<div class="grid md:grid-cols-2 gap-8">
+  {faqs.map(faq => (
+    <FAQItem question={faq.question} answer={faq.answer} />
+  ))}
+</div>

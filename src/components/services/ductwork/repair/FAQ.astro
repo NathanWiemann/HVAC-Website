@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How do I know if I need duct repair?",
+    answer: "Signs include uneven temperatures, high energy bills, poor air quality, and visible duct damage."
+  },
+  {
+    question: "Do you offer duct replacement?",
+    answer: "Yes, we specialize in both duct replacement and repair in Berks County to meet your needs."
+  },
+  {
+    question: "Can you repair ducts for heating and cooling systems?",
+    answer: "Absolutely! We provide heating duct repair and air conditioning duct repair in Berks County."
+  },
+  {
+    question: "Do you offer emergency services?",
+    answer: "Yes, our emergency duct repair services are available to address urgent issues quickly."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

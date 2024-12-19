@@ -1,0 +1,56 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/generators/installation/MainContent.astro';
+import ServiceTypes from '../../../../components/services/generators/installation/ServiceTypes.astro';
+import Benefits from '../../../../components/services/generators/installation/Benefits.astro';
+import WhyChooseUs from '../../../../components/services/generators/installation/WhyChooseUs.astro';
+import InstallationProcess from '../../../../components/services/generators/installation/InstallationProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/generators/installation/FAQ.astro';
+import ServiceAreas from '../../../../components/services/generators/installation/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality generator installation images
+const heroImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const installationImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const serviceImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+---
+
+<Layout
+  title="Generator Installation Services in Berks County, PA"
+  description="Professional generator installation services for homes and businesses. Ensure reliable power with expert installation by certified technicians."
+>
+  <Hero
+    title="Generator Installation Services in Berks County, PA"
+    description="Reliable Power When You Need It Most"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <ServiceTypes image={installationImage} />
+    <Benefits image={serviceImage} />
+    <WhyChooseUs />
+    <InstallationProcess />
+    <ContactForm 
+      title="Schedule Your Generator Installation Today"
+      subtitle="Power Up with Confidence"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Stay Powered with Expert Generator Installation"
+      description="Don't wait for the next power outage to leave you in the dark. Contact us today for professional generator installation."
+      buttonText="Schedule Installation"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

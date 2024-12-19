@@ -1,0 +1,37 @@
+---
+const signs = [
+  {
+    title: "No Heat or Insufficient Heat",
+    description: "Your boiler isn't producing enough warmth"
+  },
+  {
+    title: "Strange Noises",
+    description: "Banging, clunking, or whistling sounds indicate mechanical issues"
+  },
+  {
+    title: "High Energy Bills",
+    description: "An inefficient boiler may be using more energy than necessary"
+  },
+  {
+    title: "Leaks or Drips",
+    description: "Water around the boiler suggests leaks that require immediate repair"
+  },
+  {
+    title: "Frequent Cycling",
+    description: "A system that turns on and off frequently may have a thermostat or pressure issue"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need Boiler Services</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How quickly can you repair my generator?",
+    answer: "We offer same-day and 24/7 generator repair services in Berks County to address urgent needs."
+  },
+  {
+    question: "Do you repair all types of generators?",
+    answer: "Yes! Our team is experienced in repairing gas, diesel, portable, standby, and backup generators."
+  },
+  {
+    question: "What if my generator can't be repaired?",
+    answer: "If repairs aren't cost-effective, we provide recommendations for replacement and can handle the installation of a new system."
+  },
+  {
+    question: "How can I prevent future breakdowns?",
+    answer: "Regular maintenance, including inspections and tune-ups, can help prevent unexpected issues. Ask about our maintenance services."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

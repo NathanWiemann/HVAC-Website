@@ -1,0 +1,69 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const services = [
+  {
+    title: "Residential Duct Repair",
+    description: "Expert solutions for home ductwork systems",
+    features: [
+      "Leak detection and repair",
+      "Duct sealing",
+      "Connection repairs",
+      "Insulation repair"
+    ]
+  },
+  {
+    title: "Commercial Duct Repair",
+    description: "Professional repairs for business HVAC systems",
+    features: [
+      "Large-scale repairs",
+      "Minimal disruption",
+      "Code compliance",
+      "System optimization"
+    ]
+  },
+  {
+    title: "Emergency Duct Repair",
+    description: "Fast response for urgent ductwork issues",
+    features: [
+      "24/7 availability",
+      "Quick response times",
+      "Expert solutions",
+      "Reliable service"
+    ]
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Duct Repair Services</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Professional Duct Repair" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-3 gap-6">
+    {services.map(service => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+        <p class="text-gray-600 mb-4">{service.description}</p>
+        <ul class="space-y-2">
+          {service.features.map(feature => (
+            <li class="flex items-center text-gray-600">
+              <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>

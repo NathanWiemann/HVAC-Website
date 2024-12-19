@@ -1,0 +1,58 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/ductwork/maintenance/MainContent.astro';
+import MaintenanceServices from '../../../../components/services/ductwork/maintenance/MaintenanceServices.astro';
+import Benefits from '../../../../components/services/ductwork/maintenance/Benefits.astro';
+import WarningSigns from '../../../../components/services/ductwork/maintenance/WarningSigns.astro';
+import WhyChooseUs from '../../../../components/services/ductwork/maintenance/WhyChooseUs.astro';
+import MaintenanceProcess from '../../../../components/services/ductwork/maintenance/MaintenanceProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/ductwork/maintenance/FAQ.astro';
+import ServiceAreas from '../../../../components/services/ductwork/maintenance/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality duct maintenance images
+const heroImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const maintenanceImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const processImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+---
+
+<Layout
+  title="Duct Preventative Maintenance in Berks County, PA"
+  description="Professional duct maintenance services to ensure optimal HVAC performance. Expert preventative care by certified technicians throughout Berks County."
+>
+  <Hero
+    title="Duct Preventative Maintenance in Berks County, PA"
+    description="Extend the Life of Your Duct System with Regular Check-Ups"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <MaintenanceServices image={maintenanceImage} />
+    <Benefits />
+    <WarningSigns />
+    <WhyChooseUs />
+    <MaintenanceProcess image={processImage} />
+    <ContactForm 
+      title="Schedule Your Duct Maintenance Today"
+      subtitle="Keep Your System Running Efficiently"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Protect Your Duct System with Regular Maintenance"
+      description="Don't wait for problems to develop. Contact us today for professional duct maintenance services."
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

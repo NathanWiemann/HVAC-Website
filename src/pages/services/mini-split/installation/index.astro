@@ -1,0 +1,54 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/mini-split/installation/MainContent.astro';
+import InstallationServices from '../../../../components/services/mini-split/installation/InstallationServices.astro';
+import Benefits from '../../../../components/services/mini-split/installation/Benefits.astro';
+import InstallationProcess from '../../../../components/services/mini-split/installation/InstallationProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/mini-split/installation/FAQ.astro';
+import ServiceAreas from '../../../../components/ServiceAreas/index.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality mini-split installation images
+const heroImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const installationImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const processImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Mini-Split Installation Services in Berks County, PA"
+  description="Expert mini-split installation services for homes and businesses. Energy-efficient heating and cooling solutions with professional installation."
+>
+  <Hero
+    title="Mini-Split Installation Services in Berks County, PA"
+    description="Efficient, Customized Comfort for Homes and Businesses"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <InstallationServices image={installationImage} />
+    <Benefits />
+    <InstallationProcess image={processImage} />
+    <ContactForm 
+      title="Schedule Your Mini-Split Installation"
+      subtitle="Get Started with Energy-Efficient Comfort"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Upgrade Your Comfort with a Mini-Split System"
+      description="Contact us today to learn more about our professional mini-split installation services."
+      buttonText="Schedule Installation"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

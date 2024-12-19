@@ -1,0 +1,39 @@
+---
+interface Props {
+  phone: string;
+}
+
+const { phone } = Astro.props;
+---
+
+<div class="relative bg-gray-900 py-24">
+  <div class="absolute inset-0">
+    <img 
+      class="w-full h-full object-cover opacity-40"
+      src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+      alt="HVAC Service in Berks County"
+    />
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6">
+      Your Comfort, Our Priority: Reliable HVAC Services for Berks County, PA
+    </h1>
+    <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
+      Heating, Cooling, and Indoor Air Quality Services Designed to Keep Your Home or Business Comfortable Year-Round. Proudly Serving All of Berks County with Expert Solutions.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href={`tel:${phone}`} class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+        Call Now: {phone}
+      </a>
+      <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50">
+        Schedule Service Today
+      </a>
+      <a href="/estimate" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent hover:bg-accent/90">
+        Request Free Estimate
+      </a>
+    </div>
+  </div>
+</div>

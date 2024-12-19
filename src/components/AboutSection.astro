@@ -1,0 +1,35 @@
+---
+interface Props {
+  phone: string;
+}
+
+const { phone } = Astro.props;
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8">HVAC Expertise You Can Trust</h2>
+    <div class="prose prose-lg max-w-none">
+      <p>
+        When it comes to reliable HVAC services in Berks County, look no further. Our team specializes in providing tailored solutions for all your heating, cooling, and indoor air quality needs. Whether you need emergency HVAC repair, a new heating system installation, or routine HVAC maintenance, we deliver fast, professional service that prioritizes your comfort.
+      </p>
+      <p>
+        As one of the top-rated HVAC contractors in Berks County, we've earned a reputation for excellence. From Reading to Wyomissing, Fleetwood to Hamburg, we serve homes and businesses across the region with integrity, skill, and dedication.
+      </p>
+      
+      <h3 class="text-2xl font-semibold mt-8 mb-4">Why Choose Us for HVAC Services in Berks County?</h3>
+      <ul class="space-y-2">
+        <li>✓ Experienced HVAC Contractors: Our licensed HVAC technicians have the training and experience to handle all makes and models.</li>
+        <li>✓ 24/7 HVAC Services: Whether it's a winter furnace repair or emergency AC repair, we're available around the clock.</li>
+        <li>✓ Energy-Efficient HVAC Solutions: We specialize in installing energy-efficient HVAC systems to help you save.</li>
+        <li>✓ Reliable and Affordable: We pride ourselves on being a reliable HVAC company offering competitive pricing.</li>
+      </ul>
+      
+      <div class="mt-8">
+        <a href={`tel:${phone}`} class="text-primary hover:text-secondary font-semibold">
+          Call us today at {phone} to schedule an appointment with trusted local HVAC contractors in Berks County.
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

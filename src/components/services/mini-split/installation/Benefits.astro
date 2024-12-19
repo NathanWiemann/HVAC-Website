@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Energy Efficiency",
+    description: "Advanced technology reduces energy consumption and lowers utility bills"
+  },
+  {
+    title: "Zoned Comfort",
+    description: "Control temperature in specific areas for personalized comfort"
+  },
+  {
+    title: "Easy Installation",
+    description: "No ductwork required, making installation simple and non-invasive"
+  },
+  {
+    title: "Year-Round Comfort",
+    description: "Both heating and cooling capabilities in one system"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits of Mini-Split Installation</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,23 @@
+---
+const areas = [
+  "Reading", "Wyomissing", "Fleetwood", "Hamburg", "Kutztown",
+  "Boyertown", "Leesport", "Sinking Spring", "Birdsboro", "West Reading"
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Service Areas</h2>
+  <p class="text-lg text-gray-600 mb-8">
+    We proudly provide heating installation services throughout Berks County, including:
+  </p>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    {areas.map(area => (
+      <a 
+        href={`/locations/${area.toLowerCase().replace(/\s+/g, '-')}`}
+        class="bg-white p-4 rounded-lg shadow-sm text-center hover:bg-gray-50 transition-colors"
+      >
+        <span class="text-gray-900 hover:text-primary">{area}</span>
+      </a>
+    ))}
+  </div>
+</section>

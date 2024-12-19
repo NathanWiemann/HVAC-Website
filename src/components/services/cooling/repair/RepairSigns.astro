@@ -1,0 +1,40 @@
+---
+const signs = [
+  {
+    issue: "A/C Not Cooling Properly",
+    description: "If your air conditioner is running but not keeping your home cool, it's time for troubleshooting."
+  },
+  {
+    issue: "Unusual Noises",
+    description: "Grinding, rattling, or hissing sounds could indicate a serious mechanical issue."
+  },
+  {
+    issue: "A/C Leaks",
+    description: "Water or refrigerant leaks can lead to bigger problems if not addressed quickly."
+  },
+  {
+    issue: "Short Cycling",
+    description: "If your A/C turns on and off too frequently, it's wasting energy and reducing efficiency."
+  },
+  {
+    issue: "High Energy Bills",
+    description: "A sudden spike in energy costs could mean your system is working harder than it should."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need A/C Repair</h2>
+  <p class="text-lg text-gray-600 mb-8">
+    Not sure if it's time to call for professional air conditioning repair in Berks County? Look out for these common issues:
+  </p>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.issue}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

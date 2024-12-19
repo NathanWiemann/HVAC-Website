@@ -1,0 +1,46 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const steps = [
+  {
+    title: "Initial Diagnosis",
+    description: "Thorough system assessment to identify issues"
+  },
+  {
+    title: "Repair Solution",
+    description: "Clear explanation of needed repairs and costs"
+  },
+  {
+    title: "Expert Repairs",
+    description: "Professional repairs using quality parts"
+  },
+  {
+    title: "System Testing",
+    description: "Complete testing to ensure proper operation"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Repair Process</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Mini-Split Repair Process" class="w-full h-64 object-cover" />
+    </div>
+  )}
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

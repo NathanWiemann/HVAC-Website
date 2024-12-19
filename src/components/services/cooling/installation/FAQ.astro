@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How long does air conditioning installation take?",
+    answer: "Most installations are completed in a single day. For same-day AC installation in Berks County, contact us to schedule your service."
+  },
+  {
+    question: "What type of air conditioning system is best for my home?",
+    answer: "The right system depends on factors like your home's size, layout, and cooling needs. Our experts provide custom recommendations during your consultation."
+  },
+  {
+    question: "Are energy-efficient air conditioners worth it?",
+    answer: "Absolutely. Energy-efficient systems lower your energy usage, saving you money in the long run while reducing environmental impact."
+  },
+  {
+    question: "Do you offer financing options?",
+    answer: "Yes, we provide flexible financing to make your new air conditioning system installation in Berks County affordable."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

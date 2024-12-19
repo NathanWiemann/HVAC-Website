@@ -1,0 +1,65 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const services = [
+  {
+    title: "Heat Pump Repair",
+    items: [
+      "Emergency repair available 24/7",
+      "Professional troubleshooting",
+      "System diagnostics",
+      "Performance restoration"
+    ]
+  },
+  {
+    title: "Heat Pump Installation",
+    items: [
+      "Residential installations",
+      "Commercial systems",
+      "Ductless solutions",
+      "Geothermal options"
+    ]
+  },
+  {
+    title: "Heat Pump Maintenance",
+    items: [
+      "Regular inspections",
+      "System cleaning",
+      "Performance optimization",
+      "Preventative care"
+    ]
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Heat Pump Services</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Professional Heat Pump Services" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-3 gap-6">
+    {services.map(service => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">{service.title}</h3>
+        <ul class="space-y-2">
+          {service.items.map(item => (
+            <li class="flex items-center text-gray-600">
+              <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MainHero from '../components/MainHero.astro';
+import QuoteSection from '../components/QuoteSection/index.astro';
+import AboutSection from '../components/AboutSection.astro';
+import ServicesOverview from '../components/ServicesOverview.astro';
+import FAQSection from '../components/FAQSection/index.astro';
+import ServiceAreas from '../components/ServiceAreas/index.astro';
+import ContactSection from '../components/ContactSection/index.astro';
+import CTASection from '../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+---
+
+<Layout
+  title="Professional HVAC Services in Berks County"
+  description="Expert heating, cooling, and ventilation solutions for residential and commercial properties. Serving all of Berks County with 24/7 emergency HVAC services."
+>
+  <MainHero phone={phone} />
+  <QuoteSection phone={phone} />
+  <AboutSection phone={phone} />
+  <ServicesOverview />
+  <FAQSection />
+  <ServiceAreas />
+  <ContactSection phone={phone} />
+  <CTASection
+    title="Ready to Get Started?"
+    description="Contact us today for expert HVAC solutions tailored to your needs."
+    buttonText="Schedule Service"
+    buttonLink="/contact"
+  />
+</Layout>

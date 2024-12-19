@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Certified Technicians",
+    description: "Our HVAC professionals are fully licensed and trained to handle all AC brands"
+  },
+  {
+    title: "24/7 Emergency Service",
+    description: "Available around the clock for urgent AC repair needs"
+  },
+  {
+    title: "Upfront Pricing",
+    description: "Clear, honest pricing with no hidden fees or surprise charges"
+  },
+  {
+    title: "Satisfaction Guaranteed",
+    description: "We stand behind our work with a 100% satisfaction guarantee"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Us for Air Conditioner Repair?</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

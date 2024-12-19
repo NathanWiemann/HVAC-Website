@@ -1,0 +1,89 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import CTASection from '../../components/CTASection.astro';
+
+// Featured locations that should appear first
+const featuredLocations = [
+  "Reading",
+  "Wyomissing",
+  "Blandon",
+  "Shillington",
+  "Pennside",
+  "Birdsboro",
+  "Kutztown",
+  "Hamburg",
+  "West Reading"
+];
+
+// All other locations
+const otherLocations = [
+  "Leesport", "Sinking Spring", "Fleetwood", "Boyertown", "Oley",
+  "Wernersville", "Douglassville", "Bernville", "Temple", "Mohnton",
+  "Robesonia", "West Lawn", "Bethel", "Mount Penn", "Womelsdorf",
+  "Morgantown", "Shoemakersville", "Laureldale", "Topton",
+  "Lenhartsville", "Bally", "Centerport", "Bechtelsville",
+  "Shartlesville", "Mertztown", "Kempton", "Strausstown",
+  "Maxatawny", "Flying Hills", "Kenhorst", "Saint Lawrence",
+  "Virginville", "Mohrsville", "Lyons", "Reiffton",
+  "Rehrersburg", "New Jerusalem", "Jacksonwald", "Gouglersville",
+  "New Morgan", "Dryville", "Dauberville"
+].sort();
+
+---
+
+<Layout
+  title="Service Areas in Berks County, PA"
+  description="Professional HVAC services throughout Berks County. Find your local HVAC experts for installation, repair, and maintenance."
+>
+  <Hero
+    title="HVAC Service Areas in Berks County"
+    description="Reliable Heating and Cooling Solutions for Your Community"
+    image="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+  />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="prose max-w-none mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Primary Service Areas</h2>
+      <p class="text-lg text-gray-600">
+        Our main service areas in Berks County, providing comprehensive HVAC solutions:
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      {featuredLocations.map(location => (
+        <a
+          href={`/locations/${location.toLowerCase().replace(/\s+/g, '-')}`}
+          class="bg-primary text-white p-4 rounded-lg shadow-md hover:bg-secondary transition-colors text-center"
+        >
+          <span class="text-lg font-semibold">{location}</span>
+        </a>
+      ))}
+    </div>
+
+    <div class="prose max-w-none mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Additional Communities We Serve</h2>
+      <p class="text-lg text-gray-600">
+        We also provide expert HVAC services to these Berks County communities:
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+      {otherLocations.map(location => (
+        <a
+          href={`/locations/${location.toLowerCase().replace(/\s+/g, '-')}`}
+          class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center"
+        >
+          <span class="text-gray-900 hover:text-primary">{location}</span>
+        </a>
+      ))}
+    </div>
+
+    <CTASection
+      title="Need HVAC Service in Your Area?"
+      description="Contact us today for expert heating and cooling solutions tailored to your needs."
+      buttonText="Contact Us"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

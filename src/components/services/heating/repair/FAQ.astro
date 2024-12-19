@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How quickly can you repair my heating system?",
+    answer: "We offer same-day and 24/7 heating repair services to restore your system as quickly as possible."
+  },
+  {
+    question: "Do you work with all types of heating systems?",
+    answer: "Yes, our technicians are experienced with all types of systems, including gas heating, furnaces, and central heating units."
+  },
+  {
+    question: "What if my heating system is beyond repair?",
+    answer: "If repairs aren't enough, we also offer heating system replacements and can guide you through selecting a new, energy-efficient system."
+  },
+  {
+    question: "Is regular maintenance necessary?",
+    answer: "Yes! Routine maintenance can help prevent breakdowns and keep your system running efficiently all season long."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

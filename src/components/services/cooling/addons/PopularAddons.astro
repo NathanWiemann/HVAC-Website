@@ -1,0 +1,70 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const addons = [
+  {
+    title: "Smart Thermostat Installation",
+    features: [
+      "Schedule cooling cycles for energy savings",
+      "Monitor and adjust settings remotely",
+      "Automatically adapt to your preferences"
+    ]
+  },
+  {
+    title: "Air Conditioning Zoning Systems",
+    features: [
+      "Energy savings by cooling only occupied zones",
+      "Enhanced comfort with precise temperature control",
+      "Customized cooling for different areas"
+    ]
+  },
+  {
+    title: "Air Purifiers and Filtration",
+    features: [
+      "Reduce allergens and pollutants",
+      "UV light systems for bacteria elimination",
+      "Advanced filtration technology"
+    ]
+  },
+  {
+    title: "Humidity Control Systems",
+    features: [
+      "Combat excess moisture",
+      "Prevent mold growth",
+      "Improve overall comfort"
+    ]
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Popular A/C Add-Ons We Offer</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Popular AC Add-Ons" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 gap-6">
+    {addons.map(addon => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">{addon.title}</h3>
+        <ul class="space-y-2">
+          {addon.features.map(feature => (
+            <li class="flex items-center text-gray-600">
+              <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>

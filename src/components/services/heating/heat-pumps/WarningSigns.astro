@@ -1,0 +1,37 @@
+---
+const signs = [
+  {
+    title: "Inconsistent Heating or Cooling",
+    description: "Uneven temperatures or poor performance throughout your space"
+  },
+  {
+    title: "Unusual Noises",
+    description: "Grinding, rattling, or buzzing sounds from your heat pump"
+  },
+  {
+    title: "High Energy Bills",
+    description: "Sudden increases in utility costs indicating system inefficiency"
+  },
+  {
+    title: "Frequent Cycling",
+    description: "System turns on and off too often, reducing efficiency"
+  },
+  {
+    title: "Poor Airflow",
+    description: "Weak airflow through vents or registers"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need Heat Pump Services</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

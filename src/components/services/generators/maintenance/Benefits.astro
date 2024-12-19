@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Increased Reliability",
+    description: "Regular maintenance reduces the likelihood of unexpected breakdowns"
+  },
+  {
+    title: "Improved Efficiency",
+    description: "Keep your generator running at peak performance to save fuel and reduce costs"
+  },
+  {
+    title: "Extended Lifespan",
+    description: "Routine maintenance prevents wear and tear, prolonging system life"
+  },
+  {
+    title: "Peace of Mind",
+    description: "Be confident that your generator will work when you need it most"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits of Preventative Generator Maintenance</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

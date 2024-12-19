@@ -1,0 +1,45 @@
+---
+interface Props {
+  phone: string;
+}
+
+const { phone } = Astro.props;
+
+const services = [
+  {
+    title: "Heater Troubleshooting",
+    description: "Pinpointing problems and providing effective solutions."
+  },
+  {
+    title: "Heating Maintenance and Repair",
+    description: "Combining preventative maintenance with expert repair services."
+  },
+  {
+    title: "Furnace Repair",
+    description: "Solutions for furnace issues like faulty thermostats and pilot light problems."
+  },
+  {
+    title: "Heating Replacement and Repair",
+    description: "When repairs aren't enough, we'll guide you through replacement options."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Heating Repair Services</h2>
+  
+  <div class="grid md:grid-cols-2 gap-6">
+    {services.map(service => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+        <p class="text-gray-600">{service.description}</p>
+      </div>
+    ))}
+  </div>
+
+  <div class="text-center mt-8">
+    <a href={`tel:${phone}`} class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary">
+      Schedule Your Repair Today
+    </a>
+  </div>
+</section>

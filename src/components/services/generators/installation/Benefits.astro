@@ -1,0 +1,49 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const benefits = [
+  {
+    title: "Uninterrupted Power",
+    description: "Keep your home or business running during outages"
+  },
+  {
+    title: "Enhanced Safety",
+    description: "Professional installation reduces electrical hazards"
+  },
+  {
+    title: "Energy Efficiency",
+    description: "Modern systems offer reliable power with lower fuel costs"
+  },
+  {
+    title: "Convenience",
+    description: "Automatic systems start immediately during power loss"
+  },
+  {
+    title: "Peace of Mind",
+    description: "Be prepared for any emergency with reliable backup power"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits of Professional Generator Installation</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Generator Installation Benefits" class="w-full h-64 object-cover" />
+    </div>
+  )}
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

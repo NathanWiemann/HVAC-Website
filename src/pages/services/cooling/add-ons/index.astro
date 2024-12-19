@@ -1,0 +1,54 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/cooling/addons/MainContent.astro';
+import Benefits from '../../../../components/services/cooling/addons/Benefits.astro';
+import PopularAddons from '../../../../components/services/cooling/addons/PopularAddons.astro';
+import InstallationProcess from '../../../../components/services/cooling/addons/InstallationProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/cooling/addons/FAQ.astro';
+import ServiceAreas from '../../../../components/services/cooling/cleaning/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality HVAC add-ons images
+const heroImage = "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const addonsImage = "https://images.unsplash.com/photo-1585435421671-0c16764628ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const smartHomeImage = "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="A/C Add-Ons Services in Berks County, PA"
+  description="Enhance your cooling system with advanced features and add-ons. Smart thermostats, zoning systems, and more for improved comfort and efficiency."
+>
+  <Hero
+    title="A/C Add-Ons Services in Berks County, PA"
+    description="Enhance Comfort and Efficiency with Advanced Air Conditioning Features"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <Benefits image={addonsImage} />
+    <PopularAddons image={smartHomeImage} />
+    <InstallationProcess />
+    <ContactForm 
+      title="Customize Your A/C System Today"
+      subtitle="Enhance Your Cooling Experience"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Upgrade Your A/C System with Expert Add-Ons"
+      description="Don't settle for basic cooling—customize your system with the latest features for improved comfort and efficiency."
+      buttonText="Schedule Consultation"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

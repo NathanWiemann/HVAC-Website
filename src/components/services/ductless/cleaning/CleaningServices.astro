@@ -1,0 +1,45 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const services = [
+  {
+    title: "Ductless Air Conditioner Cleaning",
+    description: "Improve cooling efficiency and air quality with thorough cleaning services"
+  },
+  {
+    title: "Ductless Heat Pump Cleaning",
+    description: "Professional cleaning for year-round comfort and efficiency"
+  },
+  {
+    title: "System Coil and Filter Cleaning",
+    description: "Deep cleaning of vital components for optimal performance"
+  },
+  {
+    title: "Ductless System Sanitizing",
+    description: "Eliminate bacteria, mold, and allergens for healthier air"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Ductless HVAC Cleaning Services</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Ductless HVAC Cleaning Services" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 gap-6">
+    {services.map(service => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+        <p class="text-gray-600">{service.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,45 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const services = [
+  {
+    title: "Generator Filter Cleaning",
+    description: "Thorough cleaning of filters to ensure proper airflow and prevent blockages"
+  },
+  {
+    title: "Generator Engine Cleaning",
+    description: "Removal of dirt and grime to improve performance and efficiency"
+  },
+  {
+    title: "Generator Parts Cleaning",
+    description: "Detailed cleaning of internal and external components"
+  },
+  {
+    title: "Generator System Cleaning",
+    description: "Comprehensive cleaning of the entire generator system"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">What's Included in Generator Cleaning</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Generator Cleaning Services" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 gap-6">
+    {services.map(service => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+        <p class="text-gray-600">{service.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

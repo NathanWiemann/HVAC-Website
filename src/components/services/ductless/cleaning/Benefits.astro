@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Improved Efficiency",
+    description: "Regular cleaning prevents performance-reducing buildup"
+  },
+  {
+    title: "Better Air Quality",
+    description: "Remove allergens and pollutants from your system"
+  },
+  {
+    title: "Extended System Life",
+    description: "Prevent wear and tear with routine cleaning"
+  },
+  {
+    title: "Lower Energy Costs",
+    description: "Clean systems operate more efficiently"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits of Ductless HVAC Cleaning</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

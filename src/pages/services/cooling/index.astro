@@ -1,0 +1,68 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Hero from '../../../components/Hero.astro';
+import ServiceCard from '../../../components/ServiceCard.astro';
+import CTASection from '../../../components/CTASection.astro';
+
+const services = [
+  {
+    title: 'Commercial HVAC',
+    description: 'Specialized cooling solutions for businesses',
+    features: ['System Design', 'Installation', 'Maintenance', '24/7 Support'],
+    link: '/services/cooling/commercial-hvac'
+  },
+  {
+    title: 'AC Repair',
+    description: 'Expert air conditioner repair services',
+    features: ['Diagnostics', 'Repairs', 'Parts Replacement', 'Emergency Service'],
+    link: '/services/cooling/ac-repair'
+  },
+  {
+    title: 'AC Installation',
+    description: 'Professional AC system installation',
+    features: ['System Selection', 'Professional Installation', 'Testing', 'Warranty'],
+    link: '/services/cooling/ac-installation'
+  },
+  {
+    title: 'Preventative Maintenance',
+    description: 'Regular maintenance to prevent breakdowns',
+    features: ['Inspections', 'Cleaning', 'Tune-ups', 'Performance Testing'],
+    link: '/services/cooling/maintenance'
+  }
+];
+---
+
+<Layout
+  title="Cooling Services in Berks County"
+  description="Professional air conditioning services including repair, installation, and maintenance. Serving residential and commercial properties in Berks County."
+>
+  <Hero
+    title="Expert Cooling Services"
+    description="Keep your home or business comfortable with our professional AC services."
+    image="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+  />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="prose max-w-none mb-12">
+      <h2>Professional Air Conditioning Services in Berks County</h2>
+      <p>
+        At Berks County HVAC, we provide comprehensive cooling solutions for both residential and commercial properties. 
+        Our team of certified technicians has the expertise to handle all your air conditioning needs, from routine 
+        maintenance to emergency repairs and new system installations.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {services.map(service => (
+        <ServiceCard {...service} />
+      ))}
+    </div>
+  </div>
+
+  <CTASection
+    title="Ready to Schedule Service?"
+    description="Contact us today for expert cooling solutions."
+    buttonText="Schedule Now"
+    buttonLink="/contact"
+  />
+</Layout>

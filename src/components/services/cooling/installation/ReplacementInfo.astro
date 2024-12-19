@@ -1,0 +1,29 @@
+---
+const signs = [
+  "Frequent and costly repairs",
+  "Poor cooling performance",
+  "High energy bills",
+  "Outdated technology or systems older than 10-15 years"
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Replacing Your Air Conditioning System</h2>
+  <div class="bg-white p-8 rounded-lg shadow-md">
+    <p class="text-lg text-gray-600 mb-6">
+      If your old air conditioner isn't keeping up with the summer heat, it's time for an upgrade. Our air conditioning system replacement services provide modern solutions designed to keep you cool.
+    </p>
+    
+    <h3 class="text-xl font-semibold text-gray-900 mb-4">Signs you need a replacement:</h3>
+    <ul class="space-y-3">
+      {signs.map(sign => (
+        <li class="flex items-center text-gray-600">
+          <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          {sign}
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

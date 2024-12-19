@@ -1,0 +1,46 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const steps = [
+  {
+    title: "Initial System Inspection",
+    description: "Comprehensive assessment of your mini-split system"
+  },
+  {
+    title: "Performance Testing",
+    description: "Evaluation of system efficiency and operation"
+  },
+  {
+    title: "Preventative Service",
+    description: "Thorough maintenance and necessary adjustments"
+  },
+  {
+    title: "Final Check",
+    description: "Complete system verification and documentation"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Preventative Maintenance Process</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Mini-Split Maintenance Process" class="w-full h-64 object-cover" />
+    </div>
+  )}
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

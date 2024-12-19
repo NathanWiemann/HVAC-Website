@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How often should I schedule maintenance?",
+    answer: "We recommend scheduling maintenance every 6-12 months for optimal performance."
+  },
+  {
+    question: "What's included in preventative maintenance?",
+    answer: "Our service includes system inspection, cleaning, performance testing, and necessary adjustments."
+  },
+  {
+    question: "Do you offer maintenance plans?",
+    answer: "Yes! We provide comprehensive maintenance plans to keep your system running efficiently."
+  },
+  {
+    question: "How long does maintenance take?",
+    answer: "Most maintenance visits take 2-3 hours to complete thoroughly."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

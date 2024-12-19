@@ -1,0 +1,30 @@
+---
+import FAQList from './FAQList.astro';
+import type { FAQ } from '../../types/faq';
+
+const faqs: FAQ[] = [
+  {
+    question: "What makes you the best HVAC service in Berks County?",
+    answer: "We stand out because of our combination of experience, reliability, and customer focus. Our licensed HVAC technicians are equipped to handle everything from routine maintenance to emergency repairs with precision and care."
+  },
+  {
+    question: "Do you offer energy-efficient HVAC systems in Berks County?",
+    answer: "Yes, we specialize in energy-efficient HVAC installations, including smart thermostats, geothermal heating, and high-efficiency systems to help you save on energy bills."
+  },
+  {
+    question: "What areas do you serve?",
+    answer: "We proudly serve all of Berks County, including Reading, Wyomissing, Fleetwood, Boyertown, Kutztown, and Hamburg."
+  },
+  {
+    question: "Do you provide air duct cleaning in Berks County?",
+    answer: "Absolutely! Clean air ducts improve indoor air quality and system efficiency. Schedule your air duct cleaning today to breathe easier."
+  }
+];
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+    <FAQList faqs={faqs} />
+  </div>
+</section>

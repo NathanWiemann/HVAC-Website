@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  features: string[];
+  link: string;
+}
+
+const { title, description, features, link } = Astro.props;
+---
+
+<div class="bg-white shadow-lg rounded-lg p-6">
+  <h3 class="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
+  <p class="text-gray-600 mb-4">{description}</p>
+  <ul class="space-y-2 text-gray-600 mb-4">
+    {features.map(feature => <li>• {feature}</li>)}
+  </ul>
+  <a href={link} class="text-primary hover:text-secondary font-medium">Learn More →</a>
+</div>

@@ -1,0 +1,28 @@
+---
+interface Props {
+  phone: string;
+}
+
+const { phone } = Astro.props;
+---
+
+<section class="mb-16">
+  <div class="prose max-w-none">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Comprehensive Air Conditioning Preventative Maintenance in Berks County</h2>
+    <p class="text-lg text-gray-600 mb-8">
+      Your air conditioner works hard to keep you comfortable during the hottest months. Routine air conditioning preventative maintenance in Berks County ensures your system runs efficiently, lasts longer, and avoids unexpected breakdowns. Our A/C tune-up services in Berks County are designed to optimize your air conditioning system's performance, saving you time and money in the long run.
+    </p>
+    <p class="text-lg text-gray-600 mb-8">
+      From air conditioner maintenance in Reading, PA, to seasonal A/C checks across Berks County, we've got you covered. Our skilled technicians specialize in providing thorough inspections, cleaning, and adjustments for all air conditioning systems.
+    </p>
+    
+    <div class="text-center mt-8">
+      <a href={`tel:${phone}`} class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary">
+        <svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        Call Now to Schedule Your A/C Check: {phone}
+      </a>
+    </div>
+  </div>
+</section>

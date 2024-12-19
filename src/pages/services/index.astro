@@ -1,0 +1,213 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import ServicesIntro from '../../components/services/ServicesIntro.astro';
+import ServiceCategory from '../../components/services/ServiceCategory.astro';
+import MaintenanceAgreement from '../../components/services/MaintenanceAgreement.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+const coolingServices = {
+  title: "Cooling Services",
+  description: "When the temperatures rise, count on us to keep your space cool and comfortable.",
+  services: [
+    {
+      title: "Air Conditioner Repair",
+      description: "Fast and reliable solutions for all AC problems, from uneven cooling to refrigerant leaks.",
+      link: "/services/cooling/ac-repair"
+    },
+    {
+      title: "Air Conditioning Installation",
+      description: "Upgrade to an energy-efficient cooling system professionally installed by our experts.",
+      link: "/services/cooling/ac-installation"
+    },
+    {
+      title: "Air Conditioning Preventative Check",
+      description: "Routine checks to ensure optimal performance and prevent costly breakdowns.",
+      link: "/services/cooling/maintenance"
+    },
+    {
+      title: "Air Conditioning Cleaning",
+      description: "Keep your system running smoothly and your air clean with professional AC cleaning services.",
+      link: "/services/cooling/cleaning"
+    },
+    {
+      title: "A/C Add-Ons",
+      description: "Enhance your cooling system with zoning solutions, smart thermostats, or other upgrades.",
+      link: "/services/cooling/add-ons"
+    }
+  ]
+};
+
+const heatingServices = {
+  title: "Heating Services",
+  description: "Stay warm and cozy throughout the colder months with our comprehensive heating services.",
+  services: [
+    {
+      title: "General Heating Repair",
+      description: "Expert solutions for heaters that won't start or aren't providing enough heat.",
+      link: "/services/heating/repair"
+    },
+    {
+      title: "General Heating Installation",
+      description: "Custom heating system installations designed for efficiency and reliability.",
+      link: "/services/heating/installation"
+    },
+    {
+      title: "Boiler Services",
+      description: "Complete boiler solutions including repair, installation, and maintenance.",
+      link: "/services/heating/boilers"
+    },
+    {
+      title: "Furnace Services",
+      description: "From furnace repair to installation and cleaning, we handle it all.",
+      link: "/services/heating/furnaces"
+    },
+    {
+      title: "Heat Pump Services",
+      description: "Professional repair, installation, and maintenance of heat pump systems.",
+      link: "/services/heating/heat-pumps"
+    }
+  ]
+};
+
+const generatorServices = {
+  title: "Generator Services",
+  description: "Power outages shouldn't disrupt your comfort or business. Our generator services keep you running.",
+  services: [
+    {
+      title: "Generator Installation",
+      description: "Professional installation of reliable backup power systems.",
+      link: "/services/generators/installation"
+    },
+    {
+      title: "Generator Repair",
+      description: "Quick solutions to restore functionality to your generator.",
+      link: "/services/generators/repair"
+    },
+    {
+      title: "Generator Cleaning",
+      description: "Routine cleaning to maintain performance and longevity.",
+      link: "/services/generators/cleaning"
+    },
+    {
+      title: "Generator Preventative Check",
+      description: "Regular inspections to ensure your generator is ready when you need it most.",
+      link: "/services/generators/maintenance"
+    }
+  ]
+};
+
+const ductworkServices = {
+  title: "Ductwork Services",
+  description: "Properly functioning ducts are key to efficient heating and cooling.",
+  services: [
+    {
+      title: "Duct Installation",
+      description: "Professional installation of new duct systems for improved airflow.",
+      link: "/services/ductwork/installation"
+    },
+    {
+      title: "Duct Repair",
+      description: "Fix leaks, blockages, and other issues to enhance system performance.",
+      link: "/services/ductwork/repair"
+    },
+    {
+      title: "Duct Cleaning",
+      description: "Remove dust and debris for cleaner air and better efficiency.",
+      link: "/services/ductwork/cleaning"
+    },
+    {
+      title: "Duct Preventative Check",
+      description: "Routine inspections to identify and address potential problems early.",
+      link: "/services/ductwork/maintenance"
+    }
+  ]
+};
+
+const miniSplitServices = {
+  title: "Mini-Split Services",
+  description: "Mini-split systems provide versatile and efficient climate control.",
+  services: [
+    {
+      title: "Mini-Split Installation",
+      description: "Expertly installed systems for zoned heating and cooling.",
+      link: "/services/mini-split/installation"
+    },
+    {
+      title: "Mini-Split Repair",
+      description: "Fast repairs to restore your system to full operation.",
+      link: "/services/mini-split/repair"
+    },
+    {
+      title: "Mini-Split Cleaning",
+      description: "Professional cleaning for improved performance and air quality.",
+      link: "/services/mini-split/cleaning"
+    },
+    {
+      title: "Mini-Split Preventative Check",
+      description: "Routine maintenance to extend the life of your system.",
+      link: "/services/mini-split/maintenance"
+    }
+  ]
+};
+
+const ductlessServices = {
+  title: "Ductless HVAC Services",
+  description: "Ductless systems are perfect for homes and spaces without traditional ductwork.",
+  services: [
+    {
+      title: "Ductless HVAC Installation",
+      description: "Custom solutions tailored to your specific needs.",
+      link: "/services/ductless/installation"
+    },
+    {
+      title: "Ductless HVAC Repair",
+      description: "Quick and effective repairs for all ductless system issues.",
+      link: "/services/ductless/repair"
+    },
+    {
+      title: "Ductless HVAC Cleaning",
+      description: "Regular cleaning to ensure optimal performance.",
+      link: "/services/ductless/cleaning"
+    },
+    {
+      title: "Ductless HVAC Preventative Check",
+      description: "Inspections to prevent future problems and extend system lifespan.",
+      link: "/services/ductless/maintenance"
+    }
+  ]
+};
+---
+
+<Layout
+  title="Comprehensive HVAC Solutions"
+  description="Professional HVAC services for residential and commercial properties in Berks County. From installations to repairs and maintenance, we've got you covered."
+>
+  <Hero
+    title="Complete HVAC Solutions for Your Home and Business"
+    description="Expert heating, cooling, and ventilation services tailored to your needs."
+    image="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+  />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <ServicesIntro />
+    
+    <ServiceCategory {...coolingServices} />
+    <ServiceCategory {...heatingServices} />
+    <ServiceCategory {...generatorServices} />
+    <ServiceCategory {...ductworkServices} />
+    <ServiceCategory {...miniSplitServices} />
+    <ServiceCategory {...ductlessServices} />
+    
+    <MaintenanceAgreement />
+
+    <CTASection
+      title="Ready to Get Started?"
+      description="Contact us today to learn more about our comprehensive HVAC services and schedule an appointment."
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

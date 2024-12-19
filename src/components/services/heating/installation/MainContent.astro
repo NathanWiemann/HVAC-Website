@@ -1,0 +1,28 @@
+---
+interface Props {
+  phone: string;
+}
+
+const { phone } = Astro.props;
+---
+
+<section class="mb-16">
+  <div class="prose max-w-none">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Reliable Heating Installation in Berks County</h2>
+    <p class="text-lg text-gray-600 mb-8">
+      When winter temperatures drop, having a reliable and efficient heating system is essential. Our heating installation services in Berks County provide top-quality solutions for homes and businesses. Whether you need a new heating system installation in Berks County or want to upgrade to a more energy-efficient model, our team of skilled technicians has you covered.
+    </p>
+    <p class="text-lg text-gray-600 mb-8">
+      From furnace installation in Berks County to modern ductless heating system installations, we tailor every project to meet your specific needs and budget. We take pride in delivering high-quality, dependable solutions to keep your home warm and comfortable all winter long.
+    </p>
+    
+    <div class="text-center mt-8">
+      <a href={`tel:${phone}`} class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary">
+        <svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        Call Today to Schedule Your Heating Installation: {phone}
+      </a>
+    </div>
+  </div>
+</section>

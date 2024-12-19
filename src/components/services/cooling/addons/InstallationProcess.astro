@@ -1,0 +1,34 @@
+---
+const steps = [
+  {
+    title: "Consultation and Assessment",
+    description: "We start by understanding your goals and assessing your current system to recommend the best add-ons."
+  },
+  {
+    title: "Tailored Recommendations",
+    description: "Our experts provide customized solutions ensuring you get the most value from your investment."
+  },
+  {
+    title: "Professional Installation",
+    description: "We install all upgrades with precision, ensuring seamless integration with your existing system."
+  },
+  {
+    title: "System Testing",
+    description: "After installation, we thoroughly test the enhancements to ensure optimal performance."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Process for Adding Air Conditioning Features</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

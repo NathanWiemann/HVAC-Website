@@ -1,0 +1,37 @@
+---
+const signs = [
+  {
+    title: "Reduced Performance",
+    description: "System not heating or cooling effectively"
+  },
+  {
+    title: "Higher Energy Bills",
+    description: "Unexpected increases in energy costs"
+  },
+  {
+    title: "Strange Noises",
+    description: "Unusual sounds during operation"
+  },
+  {
+    title: "Poor Air Quality",
+    description: "Noticeable decrease in air quality"
+  },
+  {
+    title: "Inconsistent Operation",
+    description: "System not maintaining desired temperature"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need a Preventative Check</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

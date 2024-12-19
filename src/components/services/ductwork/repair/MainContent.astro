@@ -1,0 +1,28 @@
+---
+interface Props {
+  phone: string;
+}
+
+const { phone } = Astro.props;
+---
+
+<section class="mb-16">
+  <div class="prose max-w-none">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Professional Duct Repair in Berks County</h2>
+    <p class="text-lg text-gray-600 mb-8">
+      Don't let damaged ductwork disrupt your comfort or energy efficiency. At Berks County HVAC, we provide top-notch duct repair services in Berks County, ensuring your heating and cooling systems perform at their best. From minor leaks to extensive repairs, our team is equipped to handle all your duct repair needs.
+    </p>
+    <p class="text-lg text-gray-600 mb-8">
+      We specialize in residential duct repair in Berks County and commercial duct repair for businesses of all sizes. With affordable rates, quick response times, and reliable service, we're your go-to solution for duct issues.
+    </p>
+    
+    <div class="text-center mt-8">
+      <a href={`tel:${phone}`} class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary">
+        <svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        Call Now for Expert Duct Repair Services: {phone}
+      </a>
+    </div>
+  </div>
+</section>

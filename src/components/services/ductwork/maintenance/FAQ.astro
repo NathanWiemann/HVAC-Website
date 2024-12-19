@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How often should I schedule a duct preventative check?",
+    answer: "We recommend scheduling maintenance at least once a year, or more frequently for systems with heavy usage."
+  },
+  {
+    question: "What's included in a preventative check?",
+    answer: "Our checks include system inspection, cleaning, sealing verification, and performance testing."
+  },
+  {
+    question: "How long does maintenance take?",
+    answer: "A typical preventative maintenance visit takes 2-3 hours, depending on system size and condition."
+  },
+  {
+    question: "Do you offer maintenance plans?",
+    answer: "Yes! We provide comprehensive maintenance plans to keep your system in optimal condition year-round."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

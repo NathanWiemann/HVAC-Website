@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "Are A/C add-ons worth the investment?",
+    answer: "Yes! Features like smart thermostats, zoning systems, and UV light systems improve comfort, air quality, and energy efficiency, often paying for themselves over time."
+  },
+  {
+    question: "Can add-ons be installed on older air conditioning systems?",
+    answer: "Many A/C upgrades can be retrofitted to older systems, though compatibility will depend on your specific unit."
+  },
+  {
+    question: "How do zoning systems work?",
+    answer: "Zoning systems use dampers and separate thermostats to control the temperature in different areas of your home, providing personalized comfort and energy savings."
+  },
+  {
+    question: "Do you offer energy-efficient solutions?",
+    answer: "Absolutely. Our energy-saving upgrades help reduce energy usage and lower utility bills."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,58 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/heating/installation/MainContent.astro';
+import Benefits from '../../../../components/services/heating/installation/Benefits.astro';
+import InstallationServices from '../../../../components/services/heating/installation/InstallationServices.astro';
+import WhyChooseUs from '../../../../components/services/heating/installation/WhyChooseUs.astro';
+import InstallationProcess from '../../../../components/services/heating/installation/InstallationProcess.astro';
+import ReplacementInfo from '../../../../components/services/heating/installation/ReplacementInfo.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/heating/installation/FAQ.astro';
+import ServiceAreas from '../../../../components/services/heating/installation/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality heating installation images
+const heroImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const installImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const comfortImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Heating Installation Services in Berks County, PA"
+  description="Expert heating system installation services for homes and businesses. Professional installation by certified technicians."
+>
+  <Hero
+    title="Heating Installation Services in Berks County, PA"
+    description="Stay Warm and Comfortable with Expert Heating System Installation"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <Benefits image={comfortImage} />
+    <InstallationServices image={installImage} />
+    <WhyChooseUs />
+    <InstallationProcess />
+    <ReplacementInfo />
+    <ContactForm 
+      title="Schedule Your Heating Installation Today"
+      subtitle="Get Started with Your New Heating System"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Stay Warm with Professional Heating Installation"
+      description="Don't wait to upgrade your heating system. Contact us today for expert installation services."
+      buttonText="Schedule Installation"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

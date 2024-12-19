@@ -1,0 +1,38 @@
+---
+const steps = [
+  {
+    title: "Initial Consultation",
+    description: "We assess your home or business to determine the best heating solution for your space and budget."
+  },
+  {
+    title: "System Recommendations",
+    description: "Our experts guide you through selecting the right system for your needs."
+  },
+  {
+    title: "Professional Installation",
+    description: "Our certified technicians handle the entire installation process with precision."
+  },
+  {
+    title: "System Testing",
+    description: "We thoroughly test your new system to ensure optimal performance."
+  },
+  {
+    title: "Follow-Up Support",
+    description: "We provide ongoing support and maintenance tips for your new system."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Heating Installation Process</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

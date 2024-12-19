@@ -1,0 +1,45 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const benefits = [
+  {
+    title: "Improved Efficiency",
+    description: "An A/C efficiency check ensures your system uses less energy while providing optimal cooling."
+  },
+  {
+    title: "Reduced Breakdowns",
+    description: "Preventative maintenance helps identify and address potential issues before they become costly repairs."
+  },
+  {
+    title: "Extended System Lifespan",
+    description: "Proper upkeep prolongs the life of your air conditioning system, delaying the need for replacement."
+  },
+  {
+    title: "Lower Energy Bills",
+    description: "Energy-efficient air conditioning maintenance reduces your monthly utility costs."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Why You Need Routine A/C Maintenance</h2>
+  
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="AC Maintenance Benefits" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

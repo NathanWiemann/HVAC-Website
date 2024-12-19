@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Improved Energy Efficiency",
+    description: "Regular maintenance reduces energy waste and lowers utility bills"
+  },
+  {
+    title: "Better Air Quality",
+    description: "Clean, sealed ducts minimize dust and allergens"
+  },
+  {
+    title: "Extended System Life",
+    description: "Preventative care helps your HVAC system last longer"
+  },
+  {
+    title: "Consistent Comfort",
+    description: "Well-maintained ducts ensure even heating and cooling"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits of Regular Maintenance</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

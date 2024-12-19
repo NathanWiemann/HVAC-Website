@@ -1,0 +1,49 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const benefits = [
+  {
+    title: "Extended System Life",
+    description: "Regular maintenance helps your AC system last longer"
+  },
+  {
+    title: "Lower Energy Bills",
+    description: "Keep your system running efficiently to reduce energy costs"
+  },
+  {
+    title: "Fewer Breakdowns",
+    description: "Prevent unexpected issues with routine maintenance"
+  }
+];
+---
+
+<section class="mb-16 bg-gray-50 p-8 rounded-lg">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Routine Maintenance and AC Tune-Ups</h2>
+  
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="AC Maintenance Service" class="w-full h-64 object-cover" />
+    </div>
+  )}
+  
+  <p class="text-lg text-gray-600 mb-8">
+    Prevent costly breakdowns and ensure optimal performance with our comprehensive maintenance services.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-6 mb-8">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+
+  <a href="/maintenance" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary">
+    Learn More About Maintenance Plans
+  </a>
+</section>

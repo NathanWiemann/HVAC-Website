@@ -1,0 +1,66 @@
+---
+interface Props {
+  phone: string;
+}
+
+const { phone } = Astro.props;
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Expert AC Repair Services</h2>
+  <div class="prose max-w-none text-gray-600">
+    <p class="text-lg mb-6">
+      When your air conditioner isn't performing at its best, our expert technicians are here to help. We provide comprehensive AC repair services for all makes and models, ensuring your system gets back to peak performance quickly and efficiently.
+    </p>
+    
+    <div class="grid md:grid-cols-2 gap-8 mt-8">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Residential AC Repair</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Same-day service available
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Upfront pricing
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Experienced technicians
+          </li>
+        </ul>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Commercial AC Repair</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            24/7 emergency service
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Minimal business disruption
+          </li>
+          <li class="flex items-center">
+            <svg class="h-5 w-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Preventative maintenance plans
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,58 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/ductwork/cleaning/MainContent.astro';
+import CleaningServices from '../../../../components/services/ductwork/cleaning/CleaningServices.astro';
+import Benefits from '../../../../components/services/ductwork/cleaning/Benefits.astro';
+import WarningSigns from '../../../../components/services/ductwork/cleaning/WarningSigns.astro';
+import WhyChooseUs from '../../../../components/services/ductwork/cleaning/WhyChooseUs.astro';
+import CleaningProcess from '../../../../components/services/ductwork/cleaning/CleaningProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/ductwork/cleaning/FAQ.astro';
+import ServiceAreas from '../../../../components/services/ductwork/cleaning/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality duct cleaning images
+const heroImage = "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const cleaningImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const serviceImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Duct Cleaning Services in Berks County, PA"
+  description="Professional duct cleaning services to improve air quality and HVAC efficiency. Expert cleaning by certified technicians throughout Berks County."
+>
+  <Hero
+    title="Duct Cleaning Services in Berks County, PA"
+    description="Breathe Cleaner, Healthier Air with Professional Duct Cleaning"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <CleaningServices image={cleaningImage} />
+    <Benefits />
+    <WarningSigns />
+    <WhyChooseUs />
+    <CleaningProcess image={serviceImage} />
+    <ContactForm 
+      title="Schedule Your Duct Cleaning Today"
+      subtitle="Breathe Easier with Clean Ducts"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Enjoy Cleaner Air with Professional Duct Cleaning"
+      description="Don't let dirty ducts compromise your comfort and health. Contact us today for expert cleaning services."
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

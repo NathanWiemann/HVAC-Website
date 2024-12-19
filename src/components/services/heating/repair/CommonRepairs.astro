@@ -1,0 +1,53 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const repairs = [
+  {
+    title: "Broken Heaters",
+    description: "Restoring functionality to heaters that won't start or provide consistent warmth."
+  },
+  {
+    title: "Heating System Failures",
+    description: "Diagnosing and repairing total system breakdowns."
+  },
+  {
+    title: "Furnace Repair",
+    description: "Fixing common furnace problems, such as ignition failures or airflow issues."
+  },
+  {
+    title: "Gas Heating Repair",
+    description: "Addressing gas heating system problems safely and efficiently."
+  },
+  {
+    title: "Central Heating Repair",
+    description: "Ensuring your entire home stays warm with central system repairs."
+  },
+  {
+    title: "Heating Unit Repairs",
+    description: "From older models to modern systems, we repair all types of heating units."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Common Heating Problems We Fix</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Heating System Repair" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {repairs.map(repair => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{repair.title}</h3>
+        <p class="text-gray-600">{repair.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

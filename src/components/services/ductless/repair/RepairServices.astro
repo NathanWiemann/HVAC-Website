@@ -1,0 +1,45 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const services = [
+  {
+    title: "Ductless Air Conditioning Repair",
+    description: "Expert repairs for insufficient cooling, strange noises, or refrigerant leaks"
+  },
+  {
+    title: "Ductless Heat Pump Repair",
+    description: "Professional solutions for heating and cooling system issues"
+  },
+  {
+    title: "Mini-Split HVAC Repair",
+    description: "Specialized repairs for multi-zone systems and single-room units"
+  },
+  {
+    title: "Refrigerant Leak Repair",
+    description: "Fast and reliable refrigerant leak detection and repair services"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Ductless HVAC Repair Services</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Ductless HVAC Repair Services" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 gap-6">
+    {services.map(service => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+        <p class="text-gray-600">{service.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

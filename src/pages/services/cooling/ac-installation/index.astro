@@ -1,0 +1,58 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/cooling/installation/MainContent.astro';
+import WhyChooseUs from '../../../../components/services/cooling/installation/WhyChooseUs.astro';
+import InstallationProcess from '../../../../components/services/cooling/installation/InstallationProcess.astro';
+import SystemTypes from '../../../../components/services/cooling/installation/SystemTypes.astro';
+import Benefits from '../../../../components/services/cooling/installation/Benefits.astro';
+import ReplacementInfo from '../../../../components/services/cooling/installation/ReplacementInfo.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/cooling/installation/FAQ.astro';
+import ServiceAreas from '../../../../components/services/cooling/installation/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality HVAC installation images
+const heroImage = "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const processImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const comfortImage = "https://images.unsplash.com/photo-1615873968403-89e068629265?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+---
+
+<Layout
+  title="Air Conditioning Installation in Berks County, PA"
+  description="Expert AC installation services for homes and businesses. Energy-efficient cooling solutions with professional installation by certified technicians."
+>
+  <Hero
+    title="Air Conditioning Installation in Berks County, PA"
+    description="Stay Cool and Comfortable with Expert AC Installation Services"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <WhyChooseUs />
+    <InstallationProcess image={processImage} />
+    <SystemTypes />
+    <Benefits image={comfortImage} />
+    <ReplacementInfo />
+    <ContactForm 
+      title="Schedule Your Installation Today"
+      subtitle="Get Started with Your New Air Conditioner"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Stay Cool with Professional AC Installation in Berks County"
+      description="Don't wait to enjoy the comfort and efficiency of a new air conditioning system. Contact us today for expert installation services."
+      buttonText="Schedule Installation"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

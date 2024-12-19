@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Experienced Contractors",
+    description: "Our team is trained to handle all types of generators"
+  },
+  {
+    title: "Comprehensive Service",
+    description: "Thorough cleaning and inspection of all components"
+  },
+  {
+    title: "Affordable Solutions",
+    description: "Competitive pricing for professional cleaning"
+  },
+  {
+    title: "Emergency Services",
+    description: "Available for urgent cleaning needs"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Us for Generator Cleaning?</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,37 @@
+---
+const signs = [
+  {
+    title: "Reduced Airflow",
+    description: "Weak airflow from vents indicates blockages or dirty components."
+  },
+  {
+    title: "Higher Energy Bills",
+    description: "A dirty system works harder, increasing energy consumption."
+  },
+  {
+    title: "Strange Smells",
+    description: "Musty or unpleasant odors from your vents are a sign of dirt, mold, or debris."
+  },
+  {
+    title: "Visible Dust",
+    description: "Dust buildup around vents or on the unit itself suggests the need for cleaning."
+  },
+  {
+    title: "Inefficient Cooling",
+    description: "If your system struggles to maintain the set temperature, dirt may be hindering performance."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need Air Conditioning Cleaning</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

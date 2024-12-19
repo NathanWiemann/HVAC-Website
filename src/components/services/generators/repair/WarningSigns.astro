@@ -1,0 +1,37 @@
+---
+const signs = [
+  {
+    title: "Failure to Start",
+    description: "Generator won't power on or takes too long to start"
+  },
+  {
+    title: "Unusual Noises",
+    description: "Loud or unfamiliar sounds during operation"
+  },
+  {
+    title: "Frequent Power Loss",
+    description: "Intermittent or insufficient power output"
+  },
+  {
+    title: "Fuel or Oil Leaks",
+    description: "Visible leaks around the unit"
+  },
+  {
+    title: "Error Messages",
+    description: "Warning indicators or alerts on the system display"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need Generator Repair</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

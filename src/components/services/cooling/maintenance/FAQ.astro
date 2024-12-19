@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How often should I schedule air conditioning preventative maintenance?",
+    answer: "For optimal performance, we recommend scheduling maintenance at least once a year, preferably before the summer season begins."
+  },
+  {
+    question: "What's the difference between a tune-up and a repair?",
+    answer: "A tune-up is a preventative service to keep your system running efficiently, while a repair addresses specific issues or breakdowns."
+  },
+  {
+    question: "Do you offer maintenance plans?",
+    answer: "Yes! Our maintenance plans provide regular checkups, priority service, and discounts on repairs."
+  },
+  {
+    question: "Is preventative maintenance worth it?",
+    answer: "Absolutely. Regular maintenance saves money by reducing energy usage, preventing costly repairs, and extending system life."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

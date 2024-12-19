@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "What is a ductless HVAC system?",
+    answer: "A ductless HVAC system provides heating and cooling without ductwork, using wall-mounted indoor units and an outdoor condenser."
+  },
+  {
+    question: "How much does installation cost?",
+    answer: "Costs vary based on system size and complexity. We offer competitive pricing and flexible payment options."
+  },
+  {
+    question: "Can ductless systems heat and cool?",
+    answer: "Yes! Our ductless systems provide efficient year-round heating and cooling comfort."
+  },
+  {
+    question: "Are ductless systems energy efficient?",
+    answer: "Absolutely. Ductless systems are highly efficient and can significantly reduce energy costs."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

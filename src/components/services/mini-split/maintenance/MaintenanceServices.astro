@@ -1,0 +1,45 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const services = [
+  {
+    title: "Mini-Split System Check",
+    description: "Thorough system checks to identify potential issues and ensure optimal efficiency"
+  },
+  {
+    title: "Preventative Maintenance",
+    description: "Regular maintenance to prevent costly repairs and extend system life"
+  },
+  {
+    title: "Performance Optimization",
+    description: "Fine-tuning your system for maximum efficiency and comfort"
+  },
+  {
+    title: "Annual Check-Up",
+    description: "Comprehensive annual inspections to keep your system running smoothly"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mini-Split Preventative Maintenance Services</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Mini-Split Maintenance Services" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 gap-6">
+    {services.map(service => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+        <p class="text-gray-600">{service.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,49 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const benefits = [
+  {
+    title: "Improved Comfort",
+    description: "Enjoy consistent and reliable heating throughout your home or business."
+  },
+  {
+    title: "Energy Efficiency",
+    description: "Modern systems use less energy and save money on utility bills."
+  },
+  {
+    title: "Increased Home Value",
+    description: "A new heating system can boost your home's value and appeal."
+  },
+  {
+    title: "Enhanced Air Quality",
+    description: "Advanced systems help reduce dust, allergens, and pollutants."
+  },
+  {
+    title: "Fewer Repairs",
+    description: "Proper installation ensures your system operates efficiently and minimizes future maintenance costs."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits of Professional Heating Installation</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Professional Heating Installation" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

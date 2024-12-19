@@ -1,0 +1,58 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/cooling/maintenance/MainContent.astro';
+import Benefits from '../../../../components/services/cooling/maintenance/Benefits.astro';
+import ChecklistSection from '../../../../components/services/cooling/maintenance/ChecklistSection.astro';
+import MaintenancePlans from '../../../../components/services/cooling/maintenance/MaintenancePlans.astro';
+import WarningSignsSection from '../../../../components/services/cooling/maintenance/WarningSignsSection.astro';
+import MaintenanceProcess from '../../../../components/services/cooling/maintenance/MaintenanceProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/cooling/maintenance/FAQ.astro';
+import ServiceAreas from '../../../../components/services/cooling/maintenance/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality HVAC maintenance images
+const heroImage = "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const maintenanceImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const checkupImage = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Air Conditioning Preventative Check in Berks County, PA"
+  description="Professional AC maintenance services to ensure optimal cooling efficiency and prevent costly breakdowns. Serving all of Berks County."
+>
+  <Hero
+    title="Air Conditioning Preventative Check in Berks County, PA"
+    description="Ensure Optimal Cooling with Routine A/C Maintenance Services"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <Benefits image={maintenanceImage} />
+    <ChecklistSection image={checkupImage} />
+    <MaintenancePlans />
+    <WarningSignsSection />
+    <MaintenanceProcess />
+    <ContactForm 
+      title="Schedule Your Preventative A/C Service Today"
+      subtitle="Get Ahead with Preventative A/C Maintenance"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Stay Cool with Regular Air Conditioning Maintenance"
+      description="Don't let a poorly maintained system ruin your summer. Schedule your maintenance check today!"
+      buttonText="Schedule Maintenance"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

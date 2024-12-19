@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Experienced Technicians",
+    description: "Our team is certified and trained in advanced cleaning techniques"
+  },
+  {
+    title: "Advanced Equipment",
+    description: "State-of-the-art tools for thorough duct cleaning"
+  },
+  {
+    title: "Comprehensive Service",
+    description: "Complete cleaning of your entire duct system"
+  },
+  {
+    title: "Satisfaction Guaranteed",
+    description: "We ensure your complete satisfaction with our services"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Us for Duct Cleaning?</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,49 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const benefits = [
+  {
+    title: "Optimal Performance",
+    description: "Proper installation reduces the risk of future repairs and maximizes system lifespan."
+  },
+  {
+    title: "Energy Savings",
+    description: "Energy-efficient systems installed correctly can significantly lower your utility bills."
+  },
+  {
+    title: "Enhanced Comfort",
+    description: "Custom installation ensures consistent cooling throughout your space."
+  },
+  {
+    title: "Improved Air Quality",
+    description: "Modern systems help filter and circulate cleaner air throughout your home."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits of Professional AC Installation</h2>
+  
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Comfortable Home Environment" class="w-full h-64 object-cover" />
+    </div>
+  )}
+  
+  <p class="text-lg text-gray-600 mb-8">
+    Investing in professional A/C installation services in Berks County ensures optimal performance, efficiency, and comfort for your home or business.
+  </p>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,20 @@
+---
+const locations = [
+  "Reading", "Wyomissing", "Fleetwood", "Kutztown", "Boyertown",
+  "Hamburg", "Leesport", "Sinking Spring", "Birdsboro", "West Reading"
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Service Areas</h2>
+  <p class="text-lg text-gray-600 mb-8">
+    We provide professional AC repair services throughout Berks County, including:
+  </p>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    {locations.map(location => (
+      <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+        <span class="text-gray-900">{location}</span>
+      </div>
+    ))}
+  </div>
+</section>

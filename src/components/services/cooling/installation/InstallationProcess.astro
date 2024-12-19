@@ -1,0 +1,50 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const steps = [
+  {
+    title: "Comprehensive Assessment",
+    description: "We begin with a detailed assessment of your space to determine the best cooling solution for your needs."
+  },
+  {
+    title: "Energy-Efficient Recommendations",
+    description: "Our team focuses on energy-efficient AC installations, helping you save money and reduce environmental impact."
+  },
+  {
+    title: "Professional Installation",
+    description: "Our technicians handle every detail with precision, ensuring your system operates efficiently from day one."
+  },
+  {
+    title: "Thorough Testing",
+    description: "After installation, we perform comprehensive testing to verify your system's performance and efficiency."
+  },
+  {
+    title: "Ongoing Support",
+    description: "We're committed to your long-term satisfaction with continued support and maintenance services."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Air Conditioning Installation Process</h2>
+  
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="AC Installation Process" class="w-full h-64 object-cover" />
+    </div>
+  )}
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,38 @@
+---
+const steps = [
+  {
+    title: "Initial Assessment",
+    description: "We evaluate your power requirements to recommend the best generator system"
+  },
+  {
+    title: "System Selection",
+    description: "Our experts help you choose the ideal generator for your needs"
+  },
+  {
+    title: "Professional Installation",
+    description: "Licensed technicians handle every aspect of the installation"
+  },
+  {
+    title: "System Testing",
+    description: "Thorough testing ensures your generator operates efficiently"
+  },
+  {
+    title: "Ongoing Support",
+    description: "We provide maintenance tips and continued assistance"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Generator Installation Process</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

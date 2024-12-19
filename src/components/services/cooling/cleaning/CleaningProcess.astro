@@ -1,0 +1,34 @@
+---
+const steps = [
+  {
+    title: "Inspection and Assessment",
+    description: "We start with a comprehensive inspection to identify areas that need attention."
+  },
+  {
+    title: "Thorough Cleaning",
+    description: "Our technicians provide detailed cleaning of all components, ensuring optimal performance."
+  },
+  {
+    title: "System Testing",
+    description: "After cleaning, we test your system to ensure it's running smoothly and cooling effectively."
+  },
+  {
+    title: "Recommendations",
+    description: "We provide expert advice on maintaining your system's cleanliness and suggest additional services if needed."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Air Conditioning Cleaning Process</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

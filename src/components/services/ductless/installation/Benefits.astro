@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Energy Efficiency",
+    description: "Save on energy costs with high-performance systems"
+  },
+  {
+    title: "Zoned Comfort",
+    description: "Customize temperatures in different rooms or zones"
+  },
+  {
+    title: "No Ductwork Required",
+    description: "Perfect for homes without existing ductwork"
+  },
+  {
+    title: "Quiet Operation",
+    description: "Enjoy whisper-quiet heating and cooling"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits of Installing a Ductless HVAC System</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

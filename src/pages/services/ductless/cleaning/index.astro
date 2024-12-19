@@ -1,0 +1,54 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/ductless/cleaning/MainContent.astro';
+import CleaningServices from '../../../../components/services/ductless/cleaning/CleaningServices.astro';
+import Benefits from '../../../../components/services/ductless/cleaning/Benefits.astro';
+import CleaningProcess from '../../../../components/services/ductless/cleaning/CleaningProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/ductless/cleaning/FAQ.astro';
+import ServiceAreas from '../../../../components/ServiceAreas/index.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality ductless HVAC cleaning images
+const heroImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const cleaningImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const processImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Ductless HVAC Cleaning Services in Berks County, PA"
+  description="Professional ductless HVAC cleaning services to improve efficiency and air quality. Expert cleaning by certified technicians throughout Berks County."
+>
+  <Hero
+    title="Ductless HVAC Cleaning Services in Berks County, PA"
+    description="Keep Your System Running Efficiently with Professional Cleaning"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <CleaningServices image={cleaningImage} />
+    <Benefits />
+    <CleaningProcess image={processImage} />
+    <ContactForm 
+      title="Schedule Your Ductless HVAC Cleaning"
+      subtitle="Keep Your System Running Efficiently"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Keep Your Ductless HVAC System Clean and Efficient"
+      description="Don't let dirt and debris reduce your system's performance. Contact us today for professional cleaning services!"
+      buttonText="Schedule Cleaning"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

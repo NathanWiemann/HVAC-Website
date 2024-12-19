@@ -1,0 +1,58 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/cooling/cleaning/MainContent.astro';
+import Benefits from '../../../../components/services/cooling/cleaning/Benefits.astro';
+import CleaningServices from '../../../../components/services/cooling/cleaning/CleaningServices.astro';
+import WarningSigns from '../../../../components/services/cooling/cleaning/WarningSigns.astro';
+import ResidentialServices from '../../../../components/services/cooling/cleaning/ResidentialServices.astro';
+import CleaningProcess from '../../../../components/services/cooling/cleaning/CleaningProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/cooling/cleaning/FAQ.astro';
+import ServiceAreas from '../../../../components/services/cooling/cleaning/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality HVAC cleaning images
+const heroImage = "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const cleaningImage = "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const serviceImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Air Conditioning Cleaning Services in Berks County, PA"
+  description="Professional AC cleaning services to improve efficiency and air quality. Expert cleaning for all AC components. Serving Berks County."
+>
+  <Hero
+    title="Air Conditioning Cleaning Services in Berks County, PA"
+    description="Breathe Easier with Professional AC Cleaning"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <Benefits />
+    <CleaningServices image={cleaningImage} />
+    <WarningSigns />
+    <ResidentialServices image={serviceImage} />
+    <CleaningProcess />
+    <ContactForm 
+      title="Schedule Your A/C Cleaning Today"
+      subtitle="Enjoy Cleaner Air and Better Performance"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Breathe Easier with Expert Air Conditioning Cleaning"
+      description="Don't let a dirty system compromise your comfort or air quality. Schedule your cleaning today!"
+      buttonText="Schedule Cleaning"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

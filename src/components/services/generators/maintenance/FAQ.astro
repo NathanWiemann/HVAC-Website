@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How often should I schedule generator maintenance?",
+    answer: "We recommend scheduling an annual generator check-up, or more frequently for systems used regularly."
+  },
+  {
+    question: "Do you service all types of generators?",
+    answer: "Yes! We provide maintenance for gas, diesel, standby, and backup generators."
+  },
+  {
+    question: "What if you find an issue during the preventative check?",
+    answer: "If we discover any issues, we'll provide recommendations and can perform repairs as needed."
+  },
+  {
+    question: "Do you offer maintenance plans?",
+    answer: "Yes! Our generator preventive maintenance plans provide scheduled service and peace of mind."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

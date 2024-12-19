@@ -1,0 +1,54 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/ductless/installation/MainContent.astro';
+import InstallationServices from '../../../../components/services/ductless/installation/InstallationServices.astro';
+import Benefits from '../../../../components/services/ductless/installation/Benefits.astro';
+import InstallationProcess from '../../../../components/services/ductless/installation/InstallationProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/ductless/installation/FAQ.astro';
+import ServiceAreas from '../../../../components/ServiceAreas/index.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality ductless HVAC installation images
+const heroImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const installationImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const processImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Ductless HVAC Installation in Berks County, PA"
+  description="Expert ductless HVAC installation services for homes and businesses. Energy-efficient heating and cooling solutions with professional installation."
+>
+  <Hero
+    title="Ductless HVAC Installation in Berks County, PA"
+    description="Efficient, Flexible Heating and Cooling for Your Home or Business"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <InstallationServices image={installationImage} />
+    <Benefits />
+    <InstallationProcess image={processImage} />
+    <ContactForm 
+      title="Schedule Your Ductless HVAC Installation"
+      subtitle="Get Started with Energy-Efficient Comfort"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Upgrade to an Energy-Efficient Ductless HVAC System"
+      description="Experience the benefits of modern comfort. Contact us today to schedule your installation!"
+      buttonText="Schedule Installation"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

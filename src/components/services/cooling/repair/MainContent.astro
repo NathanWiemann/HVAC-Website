@@ -1,0 +1,53 @@
+---
+interface Props {
+  phone: string;
+}
+
+const { phone } = Astro.props;
+
+const services = [
+  {
+    title: "Residential A/C Repair in Berks County",
+    description: "Tailored solutions to keep your home cool and comfortable."
+  },
+  {
+    title: "Air Conditioning Repair in Reading, PA",
+    description: "Expert service for homeowners and businesses in Reading and surrounding areas."
+  },
+  {
+    title: "Emergency A/C Repair in Berks County",
+    description: "Available 24/7 to handle urgent repairs and restore your comfort quickly."
+  },
+  {
+    title: "Affordable A/C Repair in Berks County",
+    description: "High-quality service at a price that fits your budget."
+  }
+];
+---
+
+<section class="mb-16">
+  <div class="prose max-w-none">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Reliable A/C Repair in Berks County</h2>
+    <p class="text-lg text-gray-600 mb-8">
+      When the heat is on, and your air conditioner isn't performing, you need fast and professional A/C repair services in Berks County. Our team specializes in diagnosing and fixing all types of cooling system problems for both residential and commercial spaces.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+      {services.map(service => (
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+          <p class="text-gray-600">{service.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center">
+      <a href={`tel:${phone}`} class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary">
+        <svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        Call Now for Same-Day A/C Repair: {phone}
+      </a>
+    </div>
+  </div>
+</section>

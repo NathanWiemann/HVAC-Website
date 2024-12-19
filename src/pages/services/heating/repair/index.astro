@@ -1,0 +1,58 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/heating/repair/MainContent.astro';
+import CommonRepairs from '../../../../components/services/heating/repair/CommonRepairs.astro';
+import WhyChooseUs from '../../../../components/services/heating/repair/WhyChooseUs.astro';
+import RepairServices from '../../../../components/services/heating/repair/RepairServices.astro';
+import WarningSigns from '../../../../components/services/heating/repair/WarningSigns.astro';
+import RepairProcess from '../../../../components/services/heating/repair/RepairProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/heating/repair/FAQ.astro';
+import ServiceAreas from '../../../../components/services/heating/repair/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality heating repair images
+const heroImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const repairImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const serviceImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Heating Repair Services in Berks County, PA"
+  description="Expert heating repair services for all makes and models. Fast, reliable solutions to restore your comfort. Available 24/7 for emergency repairs."
+>
+  <Hero
+    title="Heating Repair Services in Berks County, PA"
+    description="Fast, Reliable, and Affordable Solutions to Keep Your Home Warm"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <CommonRepairs image={repairImage} />
+    <WhyChooseUs />
+    <RepairServices phone={phone} />
+    <WarningSigns />
+    <RepairProcess image={serviceImage} />
+    <ContactForm 
+      title="Schedule Your Heating Repair Today"
+      subtitle="Get Your Heat Back Fast"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Stay Warm with Reliable Heating Repair"
+      description="Don't let a broken heater ruin your comfort. Our heating repair contractors are ready to help with fast, affordable service."
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

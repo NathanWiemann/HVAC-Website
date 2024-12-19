@@ -1,0 +1,45 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const benefits = [
+  {
+    title: "Improved Comfort",
+    description: "Enjoy customized cooling with air conditioning zoning systems and enhanced humidity control."
+  },
+  {
+    title: "Better Air Quality",
+    description: "Options like UV light systems and advanced filtration systems improve the air you breathe."
+  },
+  {
+    title: "Energy Efficiency",
+    description: "Reduce energy bills with energy-saving upgrades and smart control add-ons for better system management."
+  },
+  {
+    title: "Extended System Lifespan",
+    description: "Add-ons like duct sealing and booster fans optimize system performance, reducing strain and wear."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Consider A/C Add-Ons for Your System?</h2>
+  
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="AC System Add-Ons" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

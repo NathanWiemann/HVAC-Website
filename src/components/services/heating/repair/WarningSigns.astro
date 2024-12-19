@@ -1,0 +1,37 @@
+---
+const signs = [
+  {
+    title: "No Heat or Insufficient Heat",
+    description: "If your system isn't producing enough heat, there may be a problem with the thermostat, burner, or other components."
+  },
+  {
+    title: "Unusual Noises",
+    description: "Banging, rattling, or whistling sounds can indicate mechanical issues."
+  },
+  {
+    title: "High Energy Bills",
+    description: "A sudden spike in energy costs may mean your system is struggling to operate efficiently."
+  },
+  {
+    title: "Frequent Cycling",
+    description: "If your system turns on and off frequently, it could signal a problem with airflow or temperature regulation."
+  },
+  {
+    title: "Gas Odors",
+    description: "Any smell of gas should be addressed immediately with professional heating repair."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need Heating Repair</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

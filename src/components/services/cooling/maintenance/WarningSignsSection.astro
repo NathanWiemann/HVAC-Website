@@ -1,0 +1,37 @@
+---
+const signs = [
+  {
+    title: "Inconsistent Cooling",
+    description: "Uneven temperatures throughout your home"
+  },
+  {
+    title: "High Energy Bills",
+    description: "Sudden spikes in energy usage"
+  },
+  {
+    title: "Strange Noises",
+    description: "Banging, clicking, or hissing sounds when the system runs"
+  },
+  {
+    title: "Reduced Airflow",
+    description: "Weak airflow from vents, indicating a potential blockage or issue"
+  },
+  {
+    title: "Poor Performance",
+    description: "Longer cycles or struggling to reach the set temperature"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need an Air Conditioning Preventative Check</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

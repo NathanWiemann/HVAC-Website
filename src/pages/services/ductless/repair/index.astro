@@ -1,0 +1,54 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/ductless/repair/MainContent.astro';
+import RepairServices from '../../../../components/services/ductless/repair/RepairServices.astro';
+import WarningSigns from '../../../../components/services/ductless/repair/WarningSigns.astro';
+import RepairProcess from '../../../../components/services/ductless/repair/RepairProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/ductless/repair/FAQ.astro';
+import ServiceAreas from '../../../../components/ServiceAreas/index.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality ductless HVAC repair images
+const heroImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const repairImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const processImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Ductless HVAC Repair Services in Berks County, PA"
+  description="Expert ductless HVAC repair services for all makes and models. Fast, reliable solutions with 24/7 emergency service throughout Berks County."
+>
+  <Hero
+    title="Ductless HVAC Repair Services in Berks County, PA"
+    description="Fast, Reliable Repairs for Your Ductless Heating and Cooling System"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <RepairServices image={repairImage} />
+    <WarningSigns />
+    <RepairProcess image={processImage} />
+    <ContactForm 
+      title="Schedule Your Ductless HVAC Repair"
+      subtitle="Get Your System Back to Peak Performance"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Get Your Ductless HVAC System Back in Action"
+      description="Don't let a malfunctioning system disrupt your comfort. Contact us today for expert repair services!"
+      buttonText="Schedule Repair"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

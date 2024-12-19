@@ -1,0 +1,56 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/generators/repair/MainContent.astro';
+import RepairServices from '../../../../components/services/generators/repair/RepairServices.astro';
+import WarningSigns from '../../../../components/services/generators/repair/WarningSigns.astro';
+import WhyChooseUs from '../../../../components/services/generators/repair/WhyChooseUs.astro';
+import RepairProcess from '../../../../components/services/generators/repair/RepairProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/generators/repair/FAQ.astro';
+import ServiceAreas from '../../../../components/services/generators/repair/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality generator repair images
+const heroImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const repairImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const serviceImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+---
+
+<Layout
+  title="Generator Repair Services in Berks County, PA"
+  description="Expert generator repair services for all makes and models. Fast, reliable solutions with 24/7 emergency service throughout Berks County."
+>
+  <Hero
+    title="Generator Repair Services in Berks County, PA"
+    description="Dependable Solutions to Keep Your Power Running"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <RepairServices image={repairImage} />
+    <WarningSigns />
+    <WhyChooseUs />
+    <RepairProcess image={serviceImage} />
+    <ContactForm 
+      title="Schedule Your Generator Repair Today"
+      subtitle="Restore Power with Expert Generator Repair"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Reliable Generator Repair Services When You Need Them Most"
+      description="Don't let a broken generator disrupt your comfort or operations. Contact us today for expert repair services."
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

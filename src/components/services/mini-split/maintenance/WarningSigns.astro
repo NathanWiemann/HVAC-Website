@@ -1,0 +1,32 @@
+---
+const signs = [
+  {
+    title: "Reduced Performance",
+    description: "System not cooling or heating as effectively"
+  },
+  {
+    title: "Higher Energy Bills",
+    description: "Unexpected increases in energy consumption"
+  },
+  {
+    title: "Strange Noises",
+    description: "Unusual sounds during operation"
+  },
+  {
+    title: "Poor Air Quality",
+    description: "Noticeable decrease in air quality or flow"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need a Mini-Split Preventative Check</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

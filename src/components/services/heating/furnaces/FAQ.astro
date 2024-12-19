@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How often should I schedule furnace maintenance?",
+    answer: "We recommend scheduling maintenance annually, preferably before the heating season begins."
+  },
+  {
+    question: "What types of furnaces do you service?",
+    answer: "We service all types of furnaces, including gas, electric, and oil systems."
+  },
+  {
+    question: "Do you offer emergency furnace repairs?",
+    answer: "Yes! Our emergency repair services are available 24/7 for urgent heating issues."
+  },
+  {
+    question: "When should I replace my furnace?",
+    answer: "If your furnace is over 15 years old, requires frequent repairs, or isn't heating efficiently, it may be time for a replacement."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

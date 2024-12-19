@@ -1,0 +1,37 @@
+---
+const signs = [
+  {
+    title: "Inconsistent Cooling/Heating",
+    description: "System not maintaining desired temperature"
+  },
+  {
+    title: "Strange Noises",
+    description: "Unusual sounds during operation"
+  },
+  {
+    title: "Water Leaks",
+    description: "Visible water around indoor or outdoor units"
+  },
+  {
+    title: "Poor Airflow",
+    description: "Reduced air output from indoor units"
+  },
+  {
+    title: "System Not Responding",
+    description: "Unresponsive controls or complete system failure"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need Mini-Split Repair</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

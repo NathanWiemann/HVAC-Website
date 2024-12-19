@@ -1,0 +1,33 @@
+---
+const signs = [
+  {
+    title: "Reduced Performance",
+    description: "Decreased power output or slower start times"
+  },
+  {
+    title: "Overheating Issues",
+    description: "Dirt and debris blocking airflow, causing overheating"
+  },
+  {
+    title: "Visible Dirt or Corrosion",
+    description: "Buildup on parts or connections affecting functionality"
+  },
+  {
+    title: "Unusual Noises or Smells",
+    description: "Indicates the need for thorough cleaning and inspection"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs Your Generator Needs Cleaning</h2>
+  
+  <div class="grid md:grid-cols-2 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

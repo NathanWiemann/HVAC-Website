@@ -1,0 +1,46 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const steps = [
+  {
+    title: "Comprehensive Diagnosis",
+    description: "We begin with a detailed inspection to identify the root cause of your AC issues"
+  },
+  {
+    title: "Transparent Pricing",
+    description: "Before starting any work, we provide an upfront estimate with clear pricing"
+  },
+  {
+    title: "Expert Repairs",
+    description: "Our technicians use advanced tools and quality parts to restore your system"
+  },
+  {
+    title: "Performance Testing",
+    description: "We thoroughly test your AC system to ensure it's cooling effectively"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our AC Repair Process</h2>
+  
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="AC Repair Process" class="w-full h-64 object-cover" />
+    </div>
+  )}
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

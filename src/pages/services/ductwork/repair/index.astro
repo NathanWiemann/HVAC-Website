@@ -1,0 +1,56 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/ductwork/repair/MainContent.astro';
+import RepairServices from '../../../../components/services/ductwork/repair/RepairServices.astro';
+import WarningSigns from '../../../../components/services/ductwork/repair/WarningSigns.astro';
+import WhyChooseUs from '../../../../components/services/ductwork/repair/WhyChooseUs.astro';
+import RepairProcess from '../../../../components/services/ductwork/repair/RepairProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/ductwork/repair/FAQ.astro';
+import ServiceAreas from '../../../../components/services/ductwork/repair/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality ductwork repair images
+const heroImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const repairImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const serviceImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Duct Repair Services in Berks County, PA"
+  description="Expert ductwork repair services for optimal HVAC performance. Fast, reliable solutions by certified technicians throughout Berks County."
+>
+  <Hero
+    title="Duct Repair Services in Berks County, PA"
+    description="Comprehensive Solutions for Efficient HVAC Performance"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <RepairServices image={repairImage} />
+    <WarningSigns />
+    <WhyChooseUs />
+    <RepairProcess image={serviceImage} />
+    <ContactForm 
+      title="Schedule Your Duct Repair Today"
+      subtitle="Get Expert Duct Repair Services"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Don't Let Damaged Ducts Disrupt Your Comfort"
+      description="Contact us today for professional duct repair services that restore efficiency and comfort to your home or business."
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

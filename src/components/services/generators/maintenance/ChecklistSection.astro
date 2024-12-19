@@ -1,0 +1,41 @@
+---
+const checklistItems = [
+  {
+    title: "Generator Inspection",
+    description: "Thorough examination of all components"
+  },
+  {
+    title: "Generator Tune-Up",
+    description: "Performance optimization and adjustments"
+  },
+  {
+    title: "Filter Check",
+    description: "Cleaning or replacement of filters"
+  },
+  {
+    title: "Safety Check",
+    description: "Verification of all safety systems"
+  },
+  {
+    title: "Engine Check",
+    description: "Inspection of engine components"
+  },
+  {
+    title: "Performance Testing",
+    description: "Comprehensive output testing"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">What's Included in a Generator Preventative Check?</h2>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {checklistItems.map(item => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+        <p class="text-gray-600">{item.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

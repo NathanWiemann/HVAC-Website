@@ -1,0 +1,56 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/mini-split/maintenance/MainContent.astro';
+import MaintenanceServices from '../../../../components/services/mini-split/maintenance/MaintenanceServices.astro';
+import Benefits from '../../../../components/services/mini-split/maintenance/Benefits.astro';
+import WarningSigns from '../../../../components/services/mini-split/maintenance/WarningSigns.astro';
+import MaintenanceProcess from '../../../../components/services/mini-split/maintenance/MaintenanceProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/mini-split/maintenance/FAQ.astro';
+import ServiceAreas from '../../../../components/ServiceAreas/index.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality mini-split maintenance images
+const heroImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const maintenanceImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const processImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Mini-Split Preventative Maintenance in Berks County, PA"
+  description="Professional mini-split maintenance services to ensure optimal performance. Expert preventative care by certified technicians throughout Berks County."
+>
+  <Hero
+    title="Mini-Split Preventative Maintenance in Berks County, PA"
+    description="Ensure Optimal Performance with Regular Mini-Split Check-Ups"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <MaintenanceServices image={maintenanceImage} />
+    <Benefits />
+    <WarningSigns />
+    <MaintenanceProcess image={processImage} />
+    <ContactForm 
+      title="Schedule Your Mini-Split Maintenance"
+      subtitle="Keep Your System Running Efficiently"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Protect Your Mini-Split Investment"
+      description="Don't wait for problems to develop. Contact us today for professional preventative maintenance services."
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

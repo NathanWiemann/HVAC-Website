@@ -1,0 +1,32 @@
+---
+const signs = [
+  {
+    title: "Poor Airflow",
+    description: "Weak or inconsistent air from vents"
+  },
+  {
+    title: "High Energy Bills",
+    description: "Unexplained increases in heating/cooling costs"
+  },
+  {
+    title: "Uneven Temperatures",
+    description: "Hot or cold spots throughout your space"
+  },
+  {
+    title: "Excessive Dust",
+    description: "Visible dust around vents or frequent buildup"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Signs You Need Duct Maintenance</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {signs.map(sign => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{sign.title}</h3>
+        <p class="text-gray-600">{sign.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

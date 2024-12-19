@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Certified Repair Contractors",
+    description: "Our team is fully licensed and trained to handle all generator types"
+  },
+  {
+    title: "Fast Response Time",
+    description: "24/7 emergency service with quick response times"
+  },
+  {
+    title: "Comprehensive Solutions",
+    description: "Expert diagnosis and repair for all generator issues"
+  },
+  {
+    title: "Affordable Service",
+    description: "Competitive pricing with transparent quotes"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Us for Generator Repair?</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

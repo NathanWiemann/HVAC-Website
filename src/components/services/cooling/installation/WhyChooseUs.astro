@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Licensed and Certified Installers",
+    description: "We are a licensed air conditioning installation provider in Berks County, PA, ensuring every job is done to the highest industry standards."
+  },
+  {
+    title: "Affordable and Transparent Pricing",
+    description: "We provide competitive pricing with no hidden fees, making it easy to get the comfort you need without breaking the bank."
+  },
+  {
+    title: "Energy-Efficient Options",
+    description: "Our energy-saving air conditioner installation services focus on modern, high-efficiency systems that lower your energy bills."
+  },
+  {
+    title: "Same-Day AC Installation",
+    description: "When time is of the essence, count on us for same-day AC installation in Berks County to keep your home or business comfortable."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Our AC Installation Services?</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

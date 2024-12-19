@@ -1,0 +1,56 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/heating/heat-pumps/MainContent.astro';
+import ServiceTypes from '../../../../components/services/heating/heat-pumps/ServiceTypes.astro';
+import WarningSigns from '../../../../components/services/heating/heat-pumps/WarningSigns.astro';
+import WhyChooseUs from '../../../../components/services/heating/heat-pumps/WhyChooseUs.astro';
+import ServiceProcess from '../../../../components/services/heating/heat-pumps/ServiceProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/heating/heat-pumps/FAQ.astro';
+import ServiceAreas from '../../../../components/services/heating/heat-pumps/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality heat pump service images
+const heroImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const serviceImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+const maintenanceImage = "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+---
+
+<Layout
+  title="Heat Pump Services in Berks County, PA"
+  description="Expert heat pump repair, installation, and maintenance services for year-round comfort. Available 24/7 for emergency service throughout Berks County."
+>
+  <Hero
+    title="Heat Pump Services in Berks County, PA"
+    description="Expert Repair, Installation, and Maintenance for Year-Round Comfort"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <ServiceTypes image={serviceImage} />
+    <WarningSigns />
+    <WhyChooseUs />
+    <ServiceProcess image={maintenanceImage} />
+    <ContactForm 
+      title="Schedule Your Heat Pump Service Today"
+      subtitle="Keep Your Home Comfortable Year-Round"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Stay Comfortable Year-Round with Expert Heat Pump Services"
+      description="Whether you need repair, installation, or maintenance, our team delivers reliable, professional solutions for your home or business."
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

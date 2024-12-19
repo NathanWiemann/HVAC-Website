@@ -1,0 +1,60 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Hero from '../../../../components/Hero.astro';
+import QuoteSection from '../../../../components/QuoteSection/index.astro';
+import MainContent from '../../../../components/services/generators/maintenance/MainContent.astro';
+import MaintenanceServices from '../../../../components/services/generators/maintenance/MaintenanceServices.astro';
+import ChecklistSection from '../../../../components/services/generators/maintenance/ChecklistSection.astro';
+import Benefits from '../../../../components/services/generators/maintenance/Benefits.astro';
+import WarningSigns from '../../../../components/services/generators/maintenance/WarningSigns.astro';
+import WhyChooseUs from '../../../../components/services/generators/maintenance/WhyChooseUs.astro';
+import MaintenanceProcess from '../../../../components/services/generators/maintenance/MaintenanceProcess.astro';
+import ContactForm from '../../../../components/ContactForm.astro';
+import FAQ from '../../../../components/services/generators/maintenance/FAQ.astro';
+import ServiceAreas from '../../../../components/services/generators/maintenance/ServiceAreas.astro';
+import CTASection from '../../../../components/CTASection.astro';
+
+const phone = "1-234-567-8900";
+
+// High-quality generator maintenance images
+const heroImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const maintenanceImage = "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80";
+const serviceImage = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80";
+---
+
+<Layout
+  title="Generator Preventative Check Services in Berks County, PA"
+  description="Professional generator maintenance services to ensure reliable power. Expert preventative care for all types of generators throughout Berks County."
+>
+  <Hero
+    title="Generator Preventative Check Services in Berks County, PA"
+    description="Ensure Reliable Power with Regular Generator Maintenance"
+    image={heroImage}
+  />
+
+  <QuoteSection phone={phone} />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <MainContent phone={phone} />
+    <MaintenanceServices image={maintenanceImage} />
+    <ChecklistSection />
+    <Benefits />
+    <WarningSigns />
+    <WhyChooseUs />
+    <MaintenanceProcess image={serviceImage} />
+    <ContactForm 
+      title="Schedule Your Generator Preventative Check Today"
+      subtitle="Protect Your Power with Regular Maintenance"
+      phone={phone}
+    />
+    <FAQ />
+    <ServiceAreas />
+    
+    <CTASection
+      title="Keep Your Generator Ready with Expert Preventative Maintenance"
+      description="Don't wait until a power outage to discover issues with your generator. Schedule your maintenance service today!"
+      buttonText="Schedule Service"
+      buttonLink="/contact"
+    />
+  </div>
+</Layout>

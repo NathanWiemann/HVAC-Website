@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: "How long does mini-split installation take?",
+    answer: "Most installations can be completed in 1-2 days, depending on the system size and complexity."
+  },
+  {
+    question: "Do mini-splits work in cold weather?",
+    answer: "Yes! Modern mini-split heat pumps are designed to provide efficient heating even in cold temperatures."
+  },
+  {
+    question: "What size system do I need?",
+    answer: "System size depends on your space and needs. Our experts will help determine the right size during consultation."
+  },
+  {
+    question: "Are mini-splits energy efficient?",
+    answer: "Yes, mini-splits are highly efficient and can significantly reduce energy costs compared to traditional systems."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    {faqs.map(faq => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{faq.question}</h3>
+        <p class="text-gray-600">{faq.answer}</p>
+      </div>
+    ))}
+  </div>
+</section>

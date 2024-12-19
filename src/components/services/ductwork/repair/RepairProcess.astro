@@ -1,0 +1,50 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const steps = [
+  {
+    title: "Assessment and Diagnosis",
+    description: "We thoroughly inspect your duct system to identify leaks, damage, or inefficiencies"
+  },
+  {
+    title: "Customized Repair Plan",
+    description: "Our team designs a tailored solution to address your specific ductwork issues"
+  },
+  {
+    title: "Professional Repairs",
+    description: "Using high-quality materials and advanced techniques, we restore your duct system"
+  },
+  {
+    title: "Testing and Sealing",
+    description: "We ensure all repairs are airtight, improving efficiency and airflow"
+  },
+  {
+    title: "Follow-Up Support",
+    description: "We provide maintenance tips and ongoing support to keep your ducts in top shape"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Duct Repair Process</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="Duct Repair Process" class="w-full h-64 object-cover" />
+    </div>
+  )}
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {steps.map((step, index) => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-primary text-2xl font-bold mb-3">Step {index + 1}</div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+        <p class="text-gray-600">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+const benefits = [
+  {
+    title: "Improved Energy Efficiency",
+    description: "Properly designed and installed ductwork reduces energy waste and lowers utility bills"
+  },
+  {
+    title: "Enhanced Indoor Air Quality",
+    description: "New ductwork minimizes dust, allergens, and pollutants in your air"
+  },
+  {
+    title: "Optimal HVAC Performance",
+    description: "Well-designed ducts improve overall heating and cooling system functionality"
+  },
+  {
+    title: "Increased Comfort",
+    description: "Enjoy consistent temperatures throughout your home or business"
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefits of Professional Duct Installation</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {benefits.map(benefit => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+        <p class="text-gray-600">{benefit.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

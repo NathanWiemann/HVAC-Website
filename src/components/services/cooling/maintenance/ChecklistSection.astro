@@ -1,0 +1,53 @@
+---
+interface Props {
+  image?: string;
+}
+
+const { image } = Astro.props;
+
+const checklistItems = [
+  {
+    title: "Air Conditioner Inspection",
+    description: "A comprehensive check of all components, including the compressor, coils, and refrigerant levels."
+  },
+  {
+    title: "System Cleaning",
+    description: "Removal of dust, dirt, and debris to improve airflow and efficiency."
+  },
+  {
+    title: "Filter Replacement",
+    description: "Replacing or cleaning air filters to enhance indoor air quality."
+  },
+  {
+    title: "Thermostat Calibration",
+    description: "Ensuring accurate temperature readings for consistent comfort."
+  },
+  {
+    title: "Performance Testing",
+    description: "Verifying the system operates at peak efficiency."
+  },
+  {
+    title: "Refrigerant Level Check",
+    description: "Ensuring proper refrigerant levels for effective cooling."
+  }
+];
+---
+
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">What's Included in an Air Conditioning Preventative Check</h2>
+
+  {image && (
+    <div class="mb-8 rounded-lg overflow-hidden">
+      <img src={image} alt="AC Maintenance Checklist" class="w-full h-64 object-cover" />
+    </div>
+  )}
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {checklistItems.map(item => (
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+        <p class="text-gray-600">{item.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
