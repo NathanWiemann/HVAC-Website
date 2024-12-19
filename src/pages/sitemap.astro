@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+
+interface SitemapSection {
+  title: string;
+  links: {
+    name: string;
+    url: string;
+  }[];
+}
+
+const sections: SitemapSection[] = [
+  {
+    title: "Main Pages",
+    links: [
+      { name: "Home", url: "/" },
+      { name: "Services", url: "/services" },
+      { name: "Locations", url: "/locations" },
+      { name: "Contact", url: "/contact" },
+      { name: "Blog", url: "/blog" }
+    ]
+  },
+  {
+    title: "Cooling Services",
+    links: [
+      { name: "AC Repair", url: "/services/cooling/ac-repair" },
+      { name: "AC Installation", url: "/services/cooling/ac-installation" },
+      { name: "AC Maintenance", url: "/services/cooling/maintenance" },
+      { name: "AC Cleaning", url: "/services/cooling/cleaning" },
+      { name: "AC Add-Ons", url: "/services/cooling/add-ons" }
+    ]
+  },
+  {
+    title: "Heating Services",
+    links: [
+      { name: "Heating Repair", url: "/services/heating/repair" },
+      { name: "Heating Installation", url: "/services/heating/installation" },
+      { name: "Boiler Services", url: "/services/heating/boilers" },
+      { name: "Furnace Services", url: "/services/heating/furnaces" },
+      { name: "Heat Pump Services", url: "/services/heating/heat-pumps" }
+    ]
+  },
+  {
+    title: "Ductwork Services",
+    links: [
+      { name: "Duct Installation", url: "/services/ductwork/installation" },
+      { name: "Duct Repair", url: "/services/ductwork/repair" },
+      { name: "Duct Cleaning", url: "/services/ductwork/cleaning" },
+      { name: "Duct Maintenance", url: "/services/ductwork/maintenance" }
+    ]
+  },
+  {
+    title: "Generator Services",
+    links: [
+      { name: "Generator Installation", url: "/services/generators/installation" },
+      { name: "Generator Repair", url: "/services/generators/repair" },
+      { name: "Generator Cleaning", url: "/services/generators/cleaning" },
+      { name: "Generator Maintenance", url: "/services/generators/maintenance" }
+    ]
+  },
+  {
+    title: "Mini-Split Services",
+    links: [
+      { name: "Mini-Split Installation", url: "/services/mini-split/installation" },
+      { name: "Mini-Split Repair", url: "/services/mini-split/repair" },
+      { name: "Mini-Split Cleaning", url: "/services/mini-split/cleaning" },
+      { name: "Mini-Split Maintenance", url: "/services/mini-split/maintenance" }
+    ]
+  },
+  {
+    title: "Ductless HVAC Services",
+    links: [
+      { name: "Ductless Installation", url: "/services/ductless/installation" },
+      { name: "Ductless Repair", url: "/services/ductless/repair" },
+      { name: "Ductless Cleaning", url: "/services/ductless/cleaning" },
+      { name: "Ductless Maintenance", url: "/services/ductless/maintenance" }
+    ]
+  }
+];
+---
+
+<Layout
+  title="Sitemap | Berks County HVAC"
+  description="Browse our complete list of HVAC services and pages. Find exactly what you're looking for with our organized sitemap."
+>
+  <Hero
+    title="Sitemap"
+    description="Find Everything You Need"
+    image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+  />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {sections.map(section => (
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h2 class="text-xl font-bold text-gray-900 mb-4">{section.title}</h2>
+          <ul class="space-y-2">
+            {section.links.map(link => (
+              <li>
+                <a href={link.url} class="text-gray-600 hover:text-primary">
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>
