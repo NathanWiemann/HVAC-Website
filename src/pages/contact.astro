@@ -5,8 +5,7 @@ import ContactInfo from '../components/contact/ContactInfo.astro';
 import ContactForm from '../components/contact/ContactForm.astro';
 import ServiceAreas from '../components/ServiceAreas/index.astro';
 import CTASection from '../components/CTASection.astro';
-
-const phone = "1-234-567-8900";
+import { getDisplayPhone, getTelLink } from '../utils/phone';
 ---
 
 <Layout
@@ -26,11 +25,11 @@ const phone = "1-234-567-8900";
         Whether you need installation, repair, or maintenance services, our team is here to help. Contact us today for professional HVAC solutions tailored to your needs.
       </p>
       
-      <ContactInfo phone={phone} />
+      <ContactInfo />
     </div>
 
     <div class="mb-16">
-      <ContactForm phone={phone} />
+      <ContactForm />
     </div>
 
     <ServiceAreas />
@@ -39,7 +38,7 @@ const phone = "1-234-567-8900";
       title="Emergency Service Available 24/7"
       description="Don't wait when you need urgent HVAC service. Contact us now for immediate assistance!"
       buttonText="Call Now"
-      buttonLink={`tel:${phone}`}
+      buttonLink={getTelLink()}
     />
   </div>
 </Layout>

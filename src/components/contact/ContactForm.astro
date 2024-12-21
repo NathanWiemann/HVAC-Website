@@ -1,9 +1,7 @@
 ---
-interface Props {
-  phone: string;
-}
+import { getDisplayPhone, getTelLink } from '../../utils/phone';
 
-const { phone } = Astro.props;
+interface Props {}
 
 const services = [
   "AC Installation",
@@ -21,7 +19,7 @@ const services = [
 
 <div class="bg-white p-8 rounded-lg shadow-lg">
   <h2 class="text-3xl font-bold text-gray-900 mb-2">Request Service</h2>
-  <p class="text-lg text-gray-600 mb-8">Fill out the form below or call us at <a href={`tel:${phone}`} class="text-primary hover:text-secondary font-semibold">{phone}</a></p>
+  <p class="text-lg text-gray-600 mb-8">Fill out the form below or call us at <a href={getTelLink()} class="text-primary hover:text-secondary font-semibold">{getDisplayPhone()}</a></p>
   
   <form 
     action="https://api.web3forms.com/submit" 
