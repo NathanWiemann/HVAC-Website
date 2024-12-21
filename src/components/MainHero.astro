@@ -1,9 +1,9 @@
 ---
-interface Props {
-  phone: string;
-}
+import { getDisplayPhone, getTelLink } from '../utils/phone';
 
-const { phone } = Astro.props;
+interface Props {}
+
+const {} = Astro.props;
 ---
 
 <div class="relative bg-gray-900 py-24">
@@ -22,11 +22,11 @@ const { phone } = Astro.props;
       Heating, Cooling, and Indoor Air Quality Services Designed to Keep Your Home or Business Comfortable Year-Round. Proudly Serving All of Berks County with Expert Solutions.
     </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href={`tel:${phone}`} class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary">
+      <a href={getTelLink()} class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
           <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
         </svg>
-        Call Now: {phone}
+        Call Now: {getDisplayPhone()}
       </a>
       <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50">
         Schedule Service Today
