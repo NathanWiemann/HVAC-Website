@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { posts } from '../../data/blog/posts';
+import { marked } from 'marked';
+
+export function getStaticPaths() {
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+const content = marked(post.content);
+---
+
+<Layout
+  title={post.title}
+  description={post.description}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article class="prose lg:prose-xl mx-auto">
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold text-gray-900">{post.title}</h1>
+        <div class="flex items-center text-sm text-gray-500 mt-2">
+          <span>{new Date(post.publishDate).toLocaleDateString()}</span>
+          <span class="mx-2">•</span>
+          <a href={`/blog/category/${post.category.toLowerCase()}`} class="text-primary hover:text-secondary">
+            {post.category}
+          </a>
+        </div>
+      </header>
+
+      <div class="prose prose-lg" set:html={content} />
+    </article>
+  </div>
+</Layout>
