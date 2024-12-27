@@ -1,0 +1,8 @@
+---
+import { FORM_CONFIG } from '../../utils/forms';
+---
+<!-- Hidden form configuration fields -->
+<input type="hidden" name="access_key" value={FORM_CONFIG.ACCESS_KEY}>
+<input type="hidden" name="redirect" value={FORM_CONFIG.REDIRECT_URL}>
+<input type="hidden" name="subject" value={FORM_CONFIG.DEFAULT_SUBJECT}>
+<input type="hidden" name="to" value={FORM_CONFIG.CONTACT_EMAIL}>
