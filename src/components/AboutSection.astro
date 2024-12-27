@@ -1,4 +1,6 @@
 ---
+import { getDisplayPhone, getTelLink } from '../utils/phone';
+
 interface Props {
   phone: string;
 }
@@ -26,8 +28,8 @@ const { phone } = Astro.props;
       </ul>
       
       <div class="mt-8">
-        <a href={`tel:${phone}`} class="text-primary hover:text-secondary font-semibold">
-          Call us today at {phone} to schedule an appointment with trusted local HVAC contractors in Berks County.
+        <a href={getTelLink()} class="text-primary hover:text-secondary font-semibold">
+          Call us today at {getDisplayPhone()} to schedule an appointment with trusted local HVAC contractors in Berks County.
         </a>
       </div>
     </div>

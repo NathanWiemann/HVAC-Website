@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { posts } from '../../data/blog/posts';
 import { marked } from 'marked';
+import '../../styles/blog.css';
 
 export function getStaticPaths() {
   return posts.map(post => ({
@@ -19,7 +20,7 @@ const content = marked(post.content);
   description={post.description}
 >
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <article class="prose lg:prose-xl mx-auto">
+    <article>
       <header class="mb-8">
         <h1 class="text-4xl font-bold text-gray-900">{post.title}</h1>
         <div class="flex items-center text-sm text-gray-500 mt-2">
@@ -31,7 +32,7 @@ const content = marked(post.content);
         </div>
       </header>
 
-      <div class="prose prose-lg" set:html={content} />
+      <div class="blog-content prose prose-lg max-w-none" set:html={content} />
     </article>
   </div>
 </Layout>
