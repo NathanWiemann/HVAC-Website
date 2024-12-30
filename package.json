@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build && npm run copy-sitemap",
-    "copy-sitemap": "copy src\\sitemap.xml dist\\sitemap.xml",
+    "copy-sitemap": "cp src/sitemap.xml dist/sitemap.xml",
     "preview": "astro preview",
     "astro": "astro"
   },
