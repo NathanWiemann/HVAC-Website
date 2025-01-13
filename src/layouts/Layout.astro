@@ -7,6 +7,38 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+const services = [
+  {
+    category: "Cooling Services",
+    links: [
+      { name: "AC Repair", url: "/services/cooling/ac-repair" },
+      { name: "AC Installation", url: "/services/cooling/ac-installation" },
+      { name: "AC Maintenance", url: "/services/cooling/maintenance" },
+      { name: "AC Cleaning", url: "/services/cooling/cleaning" },
+      { name: "AC Add-Ons", url: "/services/cooling/add-ons" }
+    ]
+  },
+  {
+    category: "Heating Services",
+    links: [
+      { name: "Heating Repair", url: "/services/heating/repair" },
+      { name: "Heating Installation", url: "/services/heating/installation" },
+      { name: "Boiler Services", url: "/services/heating/boilers" },
+      { name: "Furnace Services", url: "/services/heating/furnaces" },
+      { name: "Heat Pump Services", url: "/services/heating/heat-pumps" }
+    ]
+  },
+  {
+    category: "Other Services",
+    links: [
+      { name: "Ductwork Services", url: "/services/ductwork" },
+      { name: "Generator Services", url: "/services/generators" },
+      { name: "Mini-Split Services", url: "/services/mini-split" },
+      { name: "Ductless HVAC Services", url: "/services/ductless" }
+    ]
+  }
+];
 ---
 
 <!doctype html>
@@ -30,7 +62,38 @@ const { title, description } = Astro.props;
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
             <a href="/" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900">Home</a>
-            <a href="/services" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">Services</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative group inline-flex items-center">
+              <button class="inline-flex items-center h-full text-sm font-medium text-gray-500 hover:text-gray-900">
+                <span class="pt-1">Services</span>
+                <svg class="ml-1 h-4 w-4 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              <!-- Dropdown Menu -->
+              <div class="absolute left-0 mt-2 w-72 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 top-full">
+                <div class="p-4 grid gap-4">
+                  {services.map(category => (
+                    <div>
+                      <h3 class="font-semibold text-gray-900 mb-2">{category.category}</h3>
+                      <div class="grid gap-2">
+                        {category.links.map(link => (
+                          <a 
+                            href={link.url}
+                            class="text-sm text-gray-600 hover:text-primary hover:bg-gray-50 px-2 py-1 rounded-md transition-colors"
+                          >
+                            {link.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            
             <a href="/locations" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">Locations</a>
             <a href="/blog" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">Blog</a>
             <a href="/contact" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">Contact</a>

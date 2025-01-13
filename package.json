@@ -5,15 +5,14 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npm run copy-sitemap",
-    "copy-sitemap": "cp src/sitemap.xml dist/sitemap.xml",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.3",
     "astro": "^4.0.3",
-    "marked": "^11.2.0",
+    "marked": "^11.1.1",
     "tailwindcss": "^3.3.6"
   }
 }
