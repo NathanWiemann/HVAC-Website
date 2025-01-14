@@ -2,6 +2,51 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+    title: "Discover practical heater maintenance tips to keep your home warm in Reading and Berks County. Learn about heating repair, installation, and options like boilers, furnaces, and heat pumps.",
+    description: "Discover key HVAC maintenance tips to keep your system efficient year-round in Reading, Pennsylvania, and Berks County. Learn how regular care saves money and prevents breakdowns.",
+    publishDate: new Date('2025-01-14'),
+    category: "Heating",
+    slug: "heater-maintenance-tips-berks-county",
+    content: `
+## Keep Your Heating System Running Smoothly This Winter
+
+As temperatures drop in Reading, PA, and across Berks County, ensuring your heating system is in peak condition is vital. Whether you rely on a boiler, furnace, or heat pump, regular maintenance can help you avoid costly repairs and keep your home comfortable.
+
+Here are some expert tips to maintain your heater efficiently:
+
+### 1. Schedule Regular Heating Maintenance
+Routine professional inspections are crucial to identify potential issues early. Services like [Heating Repair](https://berkscountyhvac.com/services/heating/repair/) can prevent small problems from turning into costly breakdowns. Berks County homeowners should have their systems checked at least once a year to ensure optimal performance.
+
+By investing in maintenance, you'll also save money on energy bills and avoid expensive repairs caused by neglect. [Learn more here].(https://berkscountyhvac.com/)
+
+### 1. Replace Air Filters Regularly
+Dirty air filters restrict airflow, forcing your system to work harder. Change your filters every 1-3 months, especially during peak usage seasons.
+
+### 2. Replace Your Air Filters Frequently
+Dirty air filters can block airflow, forcing your system to work harder. Check and replace filters every 1-3 months during peak usage seasons. Clean filters improve energy efficiency and indoor air quality.
+
+### 3. Inspect Your Thermostat Settings
+A well-calibrated thermostat ensures your heating system isn’t overworking. If your thermostat isn’t working correctly, consider a professional evaluation or replacement as part of a [Heating Installation](https://berkscountyhvac.com/services/heating/repair/) service.
+
+### 4. Check for Drafts and Leaks
+Inspect windows, doors, and ducts for drafts or air leaks. Sealing these gaps prevents heat loss and reduces strain on your heater. If you suspect issues with your ductwork, consider [Ductwork Repair Services](https://berkscountyhvac.com/services/ductwork/installation/).
+
+### 5. Know When to Upgrade Your Heating System
+Older systems can struggle to keep up with your heating demands. Upgrading to a modern furnace, boiler, or heat pump can drastically improve efficiency and lower energy bills. Check out [Furnaces](https://berkscountyhvac.com/services/heating/furnaces/) or [Heat Pumps](https://berkscountyhvac.com/services/heating/heat-pumps/) to explore your options.
+
+### 6. Don’t Ignore Unusual Noises
+Rattling, banging, or squealing sounds could indicate significant issues. Promptly addressing these with [Heating Repair Services](https://berkscountyhvac.com/services/heating/repair/) can prevent further damage and ensure reliable heating.
+
+### Test Carbon Monoxide Detectors
+If you use a gas furnace or boiler, carbon monoxide leaks can be a danger. Regularly test your detectors and replace batteries to protect your family.
+
+## Call Your Local Heating Experts in Berks County
+When it comes to keeping your home warm, trust the professionals at [Berks County HVAC](https://berkscountyhvac.com/). Whether you need maintenance, repair, or a complete [Heating Installation](https://berkscountyhvac.com/services/heating/installation/), our team is here to help.
+
+Contact us today for all your heating needs in Reading, Wyomissing, or anywhere in Berks County. Stay warm this winter with expert care for your boiler, furnace, or heat pump!
+    `
+  }, 
+  {
     title: "Essential HVAC Maintenance Tips for Reading, PA Homeowners",
     description: "Discover key HVAC maintenance tips to keep your system efficient year-round in Reading, Pennsylvania, and Berks County. Learn how regular care saves money and prevents breakdowns.",
     publishDate: new Date('2025-01-13'),
