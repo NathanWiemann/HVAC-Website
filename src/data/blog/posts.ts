@@ -7,6 +7,7 @@ export const posts: BlogPost[] = [
     publishDate: new Date('2025-01-15'),
     category: "Heating",
     slug: "heating-services-hamburg-berks-county",
+    featured: true,
     content: `
 ## Stay Warm This Winter with Expert Heating Services in Hamburg, PA, and Berks County
 
@@ -43,6 +44,7 @@ Contact [Berks County HVAC](https://berkscountyhvac.com/) for top-notch heating 
     publishDate: new Date('2025-01-14'),
     category: "Heating",
     slug: "heater-maintenance-tips-berks-county",
+    featured: true,
     content: `
 ## Keep Your Heating System Running Smoothly This Winter
 
@@ -88,6 +90,7 @@ Contact us today for all your heating needs in Reading, Wyomissing, or anywhere 
     publishDate: new Date('2025-01-13'),
     category: "HVAC Services",
     slug: "essential-hvac-maintenance-reading-pa",
+    featured: true,
     content: `
 ## Essential HVAC Maintenance Tips for Homeowners in Reading, PA
 Regular HVAC maintenance is the key to keeping your home comfortable year-round. If you live in Reading, Pennsylvania, or the surrounding Berks County area, these tips will help you improve energy efficiency, extend your system's lifespan, and avoid costly breakdowns.
