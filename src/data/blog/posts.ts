@@ -33,13 +33,17 @@ Expertise: From traditional boilers to advanced furnaces, we handle it all. See 
 ## Why Hamburg and Berks County Trust Us
 Our reputation in Hamburg and the greater Berks County area is built on years of exceptional service. Residents choose us because:
 
-1. Fast Response Times: We know that heating emergencies can’t wait.
+1. 
+Fast Response Times: We know that heating emergencies can’t wait.
 
-2. Experienced Technicians: Our team is trained in the latest technologies and methods.
+2. 
+Experienced Technicians: Our team is trained in the latest technologies and methods.
 
-3. Affordable Pricing: We provide upfront quotes with no hidden fees.
+3. 
+Affordable Pricing: We provide upfront quotes with no hidden fees.
 
-4. Customer Satisfaction: Your comfort is our priority.
+4. 
+Customer Satisfaction: Your comfort is our priority.
 
 ## Don’t Wait Until It’s Too Late!
 A malfunctioning heating system can turn your home into an icebox. Schedule an inspection today and stay ahead of potential issues. Whether you're in Hamburg, Reading, or anywhere in Berks County, our team is ready to assist.
