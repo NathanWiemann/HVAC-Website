@@ -17,18 +17,26 @@ When winter hits Pennsylvania, having a dependable heating system isn’t just a
 
 We understand that every home and heating system is unique. That’s why we offer a range of services designed to meet your specific needs:
 
-#### Heating System Repairs: If your furnace or heat pump stops working, trust us for prompt and efficient repairs. [Learn more about our repair services](https://berkscountyhvac.com/services/heating/repair/).
-#### New Installations: Need an upgrade? We provide expert installation of energy-efficient furnaces, boilers, and heat pumps. Explore our [installation options](https://berkscountyhvac.com/services/heating/installation/).
-#### Maintenance Plans: Regular tune-ups extend the life of your heating system and prevent costly breakdowns. Find out how [maintenance can benefit you](https://berkscountyhvac.com/).
-#### Boiler and Furnace Expertise: From traditional boilers to advanced furnaces, we handle it all. See our [boiler services](https://berkscountyhvac.com/services/heating/boilers/) and [furnace services](https://berkscountyhvac.com/services/heating/furnaces/).
+#### Heating System Repairs: 
+If your furnace or heat pump stops working, trust us for prompt and efficient repairs. [Learn more about our repair services](https://berkscountyhvac.com/services/heating/repair/).
+
+#### New Installations: 
+Need an upgrade? We provide expert installation of energy-efficient furnaces, boilers, and heat pumps. Explore our [installation options](https://berkscountyhvac.com/services/heating/installation/).
+
+#### Maintenance Plans: 
+Regular tune-ups extend the life of your heating system and prevent costly breakdowns. Find out how [maintenance can benefit you](https://berkscountyhvac.com/).
+
+#### Boiler and Furnace 
+Expertise: From traditional boilers to advanced furnaces, we handle it all. See our [boiler services](https://berkscountyhvac.com/services/heating/boilers/) and [furnace services](https://berkscountyhvac.com/services/heating/furnaces/).
+
 
 ## Why Hamburg and Berks County Trust Us
 Our reputation in Hamburg and the greater Berks County area is built on years of exceptional service. Residents choose us because:
 
-### 1. Fast Response Times: We know that heating emergencies can’t wait.
-### 2. Experienced Technicians: Our team is trained in the latest technologies and methods.
-### 3. Affordable Pricing: We provide upfront quotes with no hidden fees.
-### 4. Customer Satisfaction: Your comfort is our priority.
+#### 1. Fast Response Times: We know that heating emergencies can’t wait.
+#### 2. Experienced Technicians: Our team is trained in the latest technologies and methods.
+#### 3. Affordable Pricing: We provide upfront quotes with no hidden fees.
+#### 4. Customer Satisfaction: Your comfort is our priority.
 
 ## Don’t Wait Until It’s Too Late!
 A malfunctioning heating system can turn your home into an icebox. Schedule an inspection today and stay ahead of potential issues. Whether you're in Hamburg, Reading, or anywhere in Berks County, our team is ready to assist.
