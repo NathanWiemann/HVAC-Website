@@ -2,6 +2,90 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+    title: "Reliable Generator Services in Oley and Berks County, PA: Installation, Repair, Cleaning, and Maintenance",
+    description: "Keep your home or business powered with expert generator services in Oley and Berks County. From installation to maintenance, we've got you covered.",
+    publishDate: new Date('2025-01-16'),
+    category: "Generators",
+    slug: "generator-services-oley-berks-county",
+    featured: true,
+    content: `
+## Power Up with Expert Generator Services in Oley, PA, and Berks County
+
+In today’s world, having a reliable power source isn’t just convenient—it’s essential. Whether it’s to keep your home comfortable during an outage or to ensure your business operations remain uninterrupted, a dependable generator is the ultimate solution. At [Berks County HVAC](https://berkscountyhvac.com/), we specialize in comprehensive generator services, including installation, repair, cleaning, and maintenance, tailored to Oley and the entire Berks County region.
+
+### Why Choose a Generator for Your Oley, PA, Property?
+
+Oley’s blend of rural charm and modern living comes with unique challenges, including power outages caused by severe weather or infrastructure issues. A standby generator can:
+
+Provide Continuous Power: Keep your essential appliances and systems running.
+
+Enhance Safety: Maintain lighting, heating, and security systems even during blackouts.
+
+Protect Your Investments: Avoid damage to electronics and refrigerated goods during outages.
+
+## Our Generator Services
+
+We offer a full suite of generator solutions to meet every need.
+
+### 1. Generator Installation
+
+Selecting the right generator for your property is critical. Our team will assess your energy needs, recommend the perfect model, and handle the [installation process](https://berkscountyhvac.com/services/generators/installation/) from start to finish.
+
+### 2. Generator Repair
+
+Is your generator failing to start or operating inefficiently? Trust our technicians for fast and effective [generator repair](https://berkscountyhvac.com/services/generators/repair/). From minor adjustments to major fixes, we’ll restore your generator to peak performance.
+
+### 3. Generator Cleaning
+
+Dirt and debris can clog your generator and reduce its efficiency. Our [cleaning services](https://berkscountyhvac.com/services/generators/cleaning/) ensure your system runs smoothly, prolonging its lifespan.
+
+### 4. Generator Maintenance
+
+Preventative maintenance is key to avoiding unexpected breakdowns. We offer regular [maintenance plans](https://berkscountyhvac.com/services/generators/maintenance/) that include inspections, oil changes, and performance testing to keep your generator ready when you need it most.
+
+## Why Oley and Berks County Trust Berks County HVAC
+
+For years, homeowners and businesses across Oley and Berks County have relied on us for superior HVAC and generator services. Here’s why:
+
+Experienced Technicians: Our team is trained and certified to handle all types of generator systems.
+Customized Solutions: We tailor our services to your specific energy needs.
+Affordable Pricing: Enjoy competitive rates and transparent estimates with no hidden fees.
+Local Expertise: As a locally owned business, we understand the unique needs of the Oley community.
+
+## Signs Your Generator Needs Attention
+
+Don’t wait for a power outage to discover your generator isn’t working. Look out for these warning signs:
+
+Difficulty starting the generator.
+Strange noises or vibrations during operation.
+A decrease in power output.
+Frequent tripping of circuit breakers.
+Leaks or visible damage.
+
+If you notice any of these issues, schedule a [repair service](https://berkscountyhvac.com/contact/) immediately to avoid being caught off guard during an emergency.
+
+## Benefits of Regular Generator Maintenance
+
+Routine maintenance is the best way to extend the life of your generator and ensure it’s ready when you need it. Benefits include:
+
+Improved efficiency and reliability.
+Reduced repair costs over time.
+Enhanced safety for your family or employees.
+Compliance with warranty requirements.
+
+## Service Areas in Berks County
+
+We’re proud to serve not only Oley but also nearby areas in Berks County, including [Reading](https://berkscountyhvac.com/locations/reading/), [Fleetwood](https://berkscountyhvac.com/locations/fleetwood/), and [Boyertown](https://berkscountyhvac.com/locations/boyertown/).
+
+## Contact Us Today
+
+Ensure your home or business stays powered, no matter what. Contact [Berks County HVAC](https://berkscountyhvac.com/contact/) today for expert generator services in Oley and beyond. Need a quick estimate? [Click here](https://berkscountyhvac.com/quote) to get started or give us a call to schedule your appointment.
+
+Keep your family safe, your business running, and your peace of mind intact with our reliable generator solutions.
+
+    `
+  },
+  {
     title: "Comprehensive Heating Services for Hamburg and Berks County, PA",
     description: "Learn about reliable heating solutions for Hamburg and Berks County, Pennsylvania. From repairs to new installations, ensure your home stays warm all winter long.",
     publishDate: new Date('2025-01-15'),
