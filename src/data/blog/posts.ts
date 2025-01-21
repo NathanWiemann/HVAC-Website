@@ -2,6 +2,67 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+    title: "Comprehensive HVAC Services in Fleetwood and Berks County, PA",
+    description: "Learn how our expert HVAC services keep homes and businesses in Fleetwood, PA, and Berks County comfortable year-round. From installation to maintenance, we’ve got you covered.",
+    publishDate: new Date('2025-01-21'),
+    category: "HVAC Services",
+    slug: "hvac-services-fleetwood-berks-county",
+    featured: true,
+    content: `
+
+  ## Your Trusted HVAC Experts in Fleetwood, PA, and Berks County
+
+  When it comes to maintaining comfort in your home or business, having a reliable HVAC system is essential. At [Berks County HVAC](https://berkscountyhvac.com/), we specialize in delivering top-notch heating, cooling, and indoor air quality solutions tailored to the unique needs of Fleetwood, PA, and the greater Berks County area.
+
+  ## Why Choose Us for Your HVAC Needs?
+
+  ### 1. Local Expertise
+
+As a locally owned business, we understand the seasonal challenges Fleetwood residents face. From humid summers to freezing winters, we’re prepared to keep your HVAC system performing its best year-round.
+
+  ### 2. Comprehensive Services
+Our services include:
+
+Heating Repair and Installation: Stay warm with expert furnace, boiler, and heat pump services. Learn more about heating solutions.
+
+Air Conditioning Services: Beat the summer heat with reliable AC repair, maintenance, and installation. Explore AC options.
+
+Ductless Mini-Splits: Energy-efficient solutions for precise temperature control. Benefits of ductless systems.
+
+Indoor Air Quality: Improve the air you breathe with humidifiers, air purifiers, and ventilation systems.
+
+  ### 3.  24/7 Emergency Service
+
+HVAC emergencies don’t wait, and neither do we. Our technicians are available around the clock to address urgent heating and cooling issues.
+
+  ## HVAC Services Tailored for Fleetwood, PA
+
+Fleetwood’s mix of historic homes and modern buildings requires versatile HVAC solutions. Whether you need routine maintenance or a full system upgrade, our team ensures your system is optimized for energy efficiency and comfort.
+
+  ## The Berks County Advantage
+As proud members of the Berks County community, we service towns including Reading, Wyomissing, Kutztown, and more. Our [Fleetwood location page](https://berkscountyhvac.com/locations/fleetwood/) highlights the personalized service we bring to your neighborhood.
+
+  ## Tips for Maintaining Your HVAC System in Berks County
+
+  ### Schedule Regular Maintenance
+
+Avoid costly repairs by booking seasonal check-ups. Our [maintenance plans](https://berkscountyhvac.com/contact/) keep your system running efficiently.
+
+  ### Upgrade to Energy-Efficient Systems
+
+Save on utility bills with modern HVAC technology, like Energy Star-certified units and smart thermostats.
+
+  ### Check Your Air Filters
+
+Replace filters every 1-3 months to maintain optimal air quality and system performance.
+
+    ## Contact Us Today!
+
+Ready to experience comfort like never before? Call us at (218) 503-5110 or request an estimate online. Our friendly team is here to help Fleetwood and Berks County residents find their perfect climate solution.
+
+    `
+  },
+  {
     title: "Why Maintaining Your HVAC System During Winter is Crucial in Berks County, PA",
     description: "Discover why regular HVAC maintenance is essential, even in winter, for homeowners in Berks County, including Blandon, PA. Learn how it ensures comfort, energy efficiency, and long-term savings.",
     publishDate: new Date('2025-01-17'),
