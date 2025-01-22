@@ -1,6 +1,67 @@
 import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
+
+  {
+    title: "Expert Tips for HVAC Maintenance and Installation in Berks County",
+    description: "Learn how often you should service your air conditioner, tips for HVAC maintenance, and how to find top-notch heating and cooling services in Reading, Hamburg, and Lyons.",
+    publishDate: new Date('2025-01-22'),
+    category: "HVAC Services",
+    slug: "hvac-maintenance-installation-berks-county",
+    featured: true,
+    content: `
+
+  ## Why Regular HVAC Maintenance is Crucial
+
+  When was the last time you scheduled HVAC maintenance? Many homeowners wonder, “How often should I service my air conditioner?” Experts recommend scheduling maintenance once a year for air conditioners and before each heating season for furnaces and heat pumps.
+
+Annual AC maintenance helps:
+
+Improve energy efficiency.
+Prevent costly repairs.
+Extend the lifespan of your system.
+
+[Learn more about AC maintenance benefits here.](https://berkscountyhvac.com/services/cooling/maintenance)
+
+## Finding Reliable HVAC Services Near You
+
+If you’ve searched for “HVAC near me,” you’ve likely encountered numerous options. In Berks County, homeowners trust [Berks County HVAC](https://berkscountyhvac.com/) for:
+
+Heating replacement in Reading: Upgrade your heating system for better efficiency and comfort.
+Mini-split repair in Reading: Enjoy fast and reliable repairs for your ductless systems.
+Air conditioner installation in Hamburg: Expert installation services to keep you cool during summer.
+HVAC installation in Lyons: Professional installations tailored to your home’s needs.
+
+## How Often Should You Service Your AC?
+
+If you’ve asked, “How often should I service my air conditioner?” or “How often does AC maintenance matter?” the answer is clear: once a year. Schedule your service in early spring to ensure your system is ready for warmer weather. Explore our [AC service options here.](https://berkscountyhvac.com/services/#cooling-services)
+
+## Signs It’s Time for Heating Replacement
+
+Heating systems typically last 15-20 years. If you notice uneven heating, increased energy bills, or frequent repairs, it’s time to consider heating replacement services in Reading. Modern heating systems can save you money and keep your home cozy. [Contact us for a free estimate.](https://berkscountyhvac.com/contact)
+
+## Why Choose Berks County HVAC?
+
+Berks County HVAC provides trusted, local HVAC services in Reading, Hamburg, Lyons, and beyond. Our team specializes in:
+
+Heating and cooling installations.
+Regular HVAC maintenance.
+Emergency repairs for mini-splits and central systems.
+
+[Find HVAC services near you.](https://berkscountyhvac.com/locations/)
+
+## Ready to Upgrade Your HVAC System?
+
+From heating installations in Reading to air conditioner installations in Hamburg, our team is here to help. Schedule your maintenance or installation today and experience the comfort of a well-maintained system.
+
+[Request a free quote.](https://berkscountyhvac.com/contact)
+
+## Conclusion:
+
+Routine maintenance, expert installations, and timely repairs keep your HVAC system running efficiently. Contact [Berks County HVAC](https://berkscountyhvac.com/) to ensure your home remains comfortable year-round.
+
+    `
+  },
   {
     title: "Comprehensive HVAC Services in Fleetwood and Berks County, PA",
     description: "Learn how our expert HVAC services keep homes and businesses in Fleetwood, PA, and Berks County comfortable year-round. From installation to maintenance, we’ve got you covered.",
