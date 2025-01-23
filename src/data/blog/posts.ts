@@ -1,7 +1,65 @@
 import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
+  {
+    title: "Comprehensive HVAC Services in Fleetwood: Your One-Stop Solution for Comfort",
+    description: "Discover why Fleetwood Heating and Cooling is the top choice for HVAC services, from emergency repairs to AC installations. Explore our offerings and experience unparalleled comfort and service quality.",
+    publishDate: new Date('2025-01-23'),
+    category: "HVAC Services",
+    slug: "comprehensive-hvac-services-fleetwood",
+    featured: true,
+    content: `
 
+  ## Comprehensive HVAC Services in Fleetwood: Your One-Stop Solution for Comfort
+
+  When it comes to maintaining your home's comfort, having a reliable HVAC system is essential. Whether you need routine maintenance, urgent repairs, or a brand-new AC installation, Fleetwood Heating and Cooling is here to help. Our team of experienced professionals is dedicated to delivering high-quality HVAC services that keep your home cozy in winter and cool in summer.
+
+ ## Why Choose Fleetwood Heating & Cooling?
+
+Fleetwood's Heating & Cooling stands out because of our commitment to fast, reliable service. From emergency HVAC services to routine aircon maintenance, our team prioritizes your comfort and safety. Here's what sets us apart:
+
+Prompt Service: We understand that HVAC emergencies can happen at any time. That’s why we offer rapid response to HVAC emergency services, ensuring your system gets back up and running when you need it most.
+Expert Technicians: Our certified professionals handle everything from AC repairs to complex HVAC installations with precision.
+Comprehensive Offerings: We provide a full suite of services, including AC installation, maintenance, and repair. No matter your HVAC needs, we’ve got you covered.
+
+[Learn More About Our Services](https://berkscountyhvac.com/)
+
+## Our HVAC Services in Fleetwood
+
+#### Emergency HVAC Services
+When the unexpected happens, rely on Fleetwood Heating & Cooling for fast and efficient solutions. Our 24/7 emergency HVAC services ensure you're never left in the cold—or the heat.
+
+#### AC Installation
+Need a new air conditioning unit? Our AC installation service is designed to provide energy-efficient cooling tailored to your home's specific needs. We also offer guidance on selecting the best unit for your space.
+
+[Discover AC Installation Options](https://berkscountyhvac.com/services/cooling/ac-installation/)
+
+#### AC Repairs
+A malfunctioning AC can disrupt your comfort. Our AC repair team quickly diagnoses and resolves issues, restoring your system to peak performance.
+
+[Book an AC Repair Service Call](https://berkscountyhvac.com/services/cooling/ac-repair/)
+
+#### Aircon Maintenance Near Me
+Regular maintenance is key to extending the life of your HVAC system. Schedule an HVAC service call to ensure your system is clean, efficient, and ready for any season.
+
+[Check Out Our Maintenance Plans](https://berkscountyhvac.com/contact)
+
+## Serving Fleetwood and Beyond
+Fleetwood Heating & Cooling proudly serves Fleetwood and surrounding areas. From routine maintenance to emergency services, our local expertise ensures we deliver solutions tailored to your community's needs.
+
+[Find HVAC Services in Fleetwood](https://berkscountyhvac.com/locations/fleetwood/)
+
+## Contact Us Today
+
+Ready to improve your home's comfort and efficiency? Call Fleetwood Heating and Cooling today to schedule an HVAC service call or request a free estimate for your next project.
+
+[Contact Us Now](https://berkscountyhvac.com/contact)
+
+Trust Fleetwood's Heating & Cooling to keep your home comfortable year-round. Experience the difference with professional HVAC services designed to meet your needs and exceed your expectations.
+
+
+    `
+  },
   {
     title: "Expert Tips for HVAC Maintenance and Installation in Berks County",
     description: "Learn how often you should service your air conditioner, tips for HVAC maintenance, and how to find top-notch heating and cooling services in Reading, Hamburg, and Lyons.",
