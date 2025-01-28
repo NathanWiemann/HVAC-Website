@@ -10,13 +10,16 @@ export const posts: BlogPost[] = [
     featured: true,
     content: `
 
-    ## Welcome Bechtelsville Residents!
+## Welcome Bechtelsville Residents!
+
 When it comes to home comfort, you need an HVAC team you can trust. That’s why we’re excited to announce our professional HVAC services are now available in Bechtelsville, PA! Whether it’s a sizzling summer day or a frigid winter night, our team is here to ensure your home stays comfortable all year long.
 
-    ## Comprehensive HVAC Solutions
+## Comprehensive HVAC Solutions
+
 We offer a wide range of heating, cooling, and air quality services to meet your specific needs:
 
 ### Air Conditioning Services
+
 AC Installation: Upgrade to an energy-efficient cooling system designed to save on utility costs.
 
 AC Repair: If your system is struggling, we provide fast and reliable repair services to restore comfort.
@@ -80,43 +83,43 @@ Experience the difference with professional HVAC services in Bechtelsville, PA. 
     featured: true,
     content: `
 
-    ## Maximize Comfort While Minimizing Costs
+## Maximize Comfort While Minimizing Costs
 
 Your HVAC system is one of the most significant investments in your home, ensuring year-round comfort for your family. But are you getting the most out of it? With these simple tips, homeowners in Berks County can optimize their HVAC systems for maximum efficiency while reducing energy costs.
 
-    ### 1. Schedule Regular Maintenance
+### 1. Schedule Regular Maintenance
 
 Routine maintenance is the cornerstone of HVAC efficiency. Schedule professional [HVAC maintenance services](https://berkscountyhvac.com/services/cooling/maintenance/) at least twice a year to ensure your system is running smoothly. Maintenance includes cleaning, inspecting, and tuning up your system to prevent breakdowns and inefficiencies.
 
-    ### 2. Upgrade to a Smart Thermostat
+### 2. Upgrade to a Smart Thermostat
 
 Investing in a programmable or smart thermostat allows you to control your home's temperature more effectively. Smart thermostats can learn your habits and adjust temperatures to save energy without compromising comfort.
 
-    ### 3. Change Your Air Filters
+### 3. Change Your Air Filters
 
 Clogged air filters force your HVAC system to work harder, wasting energy. Check your filters monthly and replace them every 1-3 months or as needed. Learn more about the importance of clean air in our [AC Cleaning Services](https://berkscountyhvac.com/services/cooling/cleaning/).
 
-    ### 4. Seal Leaky Ducts
+### 4. Seal Leaky Ducts
 
 Air leaks in your ductwork can cause up to 30% energy loss. Consider professional [ductwork maintenance](https://berkscountyhvac.com/services/ductwork/maintenance/) to seal leaks and improve airflow.
 
-    ### 5. Install Energy-Efficient Equipment
+### 5. Install Energy-Efficient Equipment
 
 If your HVAC system is over 10 years old, it might be time for an upgrade. Newer systems are far more energy-efficient, saving you money in the long run. Explore our [heating installation services](https://berkscountyhvac.com/services/heating/installation/) for modern solutions tailored to your needs.
 
-    ### 6. Utilize Ceiling Fans
+### 6. Utilize Ceiling Fans
 
 Ceiling fans can help circulate air, reducing the load on your HVAC system. During winter, reverse the fan's direction to push warm air downward for added comfort.
 
-    ### 7. Clear Debris Around Outdoor Units
+### 7. Clear Debris Around Outdoor Units
 
 Keep your outdoor HVAC unit free of leaves, dirt, and debris to maintain proper airflow. This small step can significantly enhance your system's efficiency.
 
-    ## Why Choose Berks County HVAC?
+## Why Choose Berks County HVAC?
 
 At Berks County HVAC, we’re dedicated to helping homeowners achieve optimal comfort and efficiency. Our comprehensive services include [cooling installation](https://berkscountyhvac.com/services/cooling/ac-installation/), heating maintenance, and everything in between.
     
-    ## Contact Us Today!
+## Contact Us Today!
 Ready to boost your HVAC system’s performance? Contact our expert team for a consultation or explore our range of [services](https://berkscountyhvac.com/services/) to find the perfect solution for your home.
 
 Request a [Free Quote](https://berkscountyhvac.com/contact/) and start saving on energy costs today!
