@@ -2,6 +2,76 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+    title: "Expert HVAC Services Now Available in Bechtelsville, PA",
+    description: "Discover reliable and professional HVAC services in Bechtelsville, PA. From AC repairs to heating installations, our experienced technicians ensure your home stays comfortable year-round.",
+    publishDate: new Date('2025-01-28'),
+    category: "HVAC Services",
+    slug: "hvac-services-bechtelsville-pa",
+    featured: true,
+    content: `
+
+    ## Welcome Bechtelsville Residents!
+When it comes to home comfort, you need an HVAC team you can trust. That’s why we’re excited to announce our professional HVAC services are now available in Bechtelsville, PA! Whether it’s a sizzling summer day or a frigid winter night, our team is here to ensure your home stays comfortable all year long.
+
+    ## Comprehensive HVAC Solutions
+We offer a wide range of heating, cooling, and air quality services to meet your specific needs:
+
+### Air Conditioning Services
+AC Installation: Upgrade to an energy-efficient cooling system designed to save on utility costs.
+
+AC Repair: If your system is struggling, we provide fast and reliable repair services to restore comfort.
+
+AC Maintenance: Prevent breakdowns with regular maintenance, ensuring your system runs smoothly when you need it most.
+
+
+### Heating Services
+
+Heating Installation: From furnaces to heat pumps, our installations are tailored to maximize efficiency and comfort during chilly Pennsylvania winters.
+
+Heating Repair: Don’t let a broken heater leave you in the cold. Our technicians respond quickly to get your system up and running.
+
+Heating Maintenance: Keep your system in peak condition with seasonal check-ups and tune-ups.
+
+### Indoor Air Quality
+
+Improve your home’s air with air purifiers, humidifiers, and duct cleaning services. We help create a healthier living environment for your family. 
+
+## Why Choose Us in Bechtelsville, PA?
+
+Here’s why Bechtelsville residents trust us for their HVAC needs:
+
+Local Expertise: As a trusted HVAC company in Berks County, we understand the unique climate and challenges of Bechtelsville homes.
+
+Certified Technicians: Our skilled professionals are trained to handle any job with precision and care.
+
+Fast Response Times: We know HVAC emergencies can’t wait. That’s why we prioritize prompt service.
+
+Transparent Pricing: No surprises—just honest, upfront pricing for all services.
+
+## Tips for Bechtelsville Homeowners
+
+1. Schedule Regular Maintenance
+
+Routine HVAC maintenance keeps your system running efficiently and prevents costly repairs. [Learn more about our maintenance plans here](https://berkscountyhvac.com/services/cooling/maintenance/).
+
+2. Upgrade to Energy-Efficient Systems
+
+Consider replacing older systems with modern, energy-saving models. Check out our [heating installation services](https://berkscountyhvac.com/services/heating/installation/) for options.
+
+3. Don’t Ignore Strange Noises
+
+Unusual sounds from your HVAC system can indicate problems. Contact us for [repairs](https://berkscountyhvac.com/services/cooling/ac-repair/) before the issue worsens.
+
+## Ready to Improve Your Home Comfort?
+
+From AC repairs to furnace installations, we’re here to help Bechtelsville residents enjoy reliable comfort year-round. Contact us today to schedule an appointment or request a free quote.
+
+[Contact Us Now](https://berkscountyhvac.com/contact) or call (218) 503-5110.
+
+Experience the difference with professional HVAC services in Bechtelsville, PA. Your comfort is our priority!
+    `
+  },
+  {
     title: "Maximizing HVAC Efficiency: Top Tips for Homeowners in Berks County",
     description: "Learn how to enhance the efficiency of your HVAC system with these actionable tips. Save energy, reduce costs, and keep your home comfortable year-round.",
     publishDate: new Date('2025-01-27'),
