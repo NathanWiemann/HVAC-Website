@@ -2,6 +2,63 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+    title: "The Ultimate Guide to HVAC Services in Reading, PA: Heating, Cooling & More",
+    description: "Looking for reliable HVAC services in Reading, PA? Our expert team offers heating, cooling, ductwork, generator services, and more to keep your home comfortable year-round.",
+    publishDate: new Date('2025-01-30'),
+    category: "HVAC Services",
+    slug: "hvac-services-reading-pa",
+    featured: true,
+    content: `
+
+## Your Trusted HVAC Experts in Reading, PA
+
+When it comes to keeping your home comfortable, having a reliable HVAC system is essential. Whether you need emergency heating repair in the middle of winter or an air conditioning installation for the hot summer months, our team at Berks County HVAC is here to help.
+
+We provide top-quality HVAC services in Reading, PA, and surrounding areas, ensuring your home stays at the perfect temperature all year long.
+
+## Comprehensive HVAC Services in Reading
+
+### Heating Services
+
+Winters in Reading, PA, can be brutal. Make sure your home stays warm with our expert heating solutions:
+✅ [Furnace Installation & Repair](https://berkscountyhvac.com/services/heating/furnaces/)
+✅ [Boiler Services](https://berkscountyhvac.com/services/heating/boilers/)
+✅ [Heat Pump Installation & Repair](https://berkscountyhvac.com/services/heating/heat-pumps/)
+
+### Cooling Services
+
+When summer hits, a reliable air conditioning system is a must. We offer:
+✅ [AC Installation](https://berkscountyhvac.com/services/cooling/ac-installation/)
+✅ [AC Repair](https://berkscountyhvac.com/services/cooling/ac-repair/)
+✅ [AC Cleaning](https://berkscountyhvac.com/services/cooling/cleaning/)
+
+Ductwork Services
+Leaky ducts can lead to wasted energy and poor indoor air quality. Our ductwork services include:
+✅ [Duct Installation](https://berkscountyhvac.com/services/ductwork/installation/)
+✅ [Duct Cleaning](https://berkscountyhvac.com/services/ductwork/cleaning/)
+✅ [Duct Repair](https://berkscountyhvac.com/services/ductwork/repair/)
+
+Mini-Split & Ductless Systems
+For homes without central HVAC, mini-split and ductless systems provide energy-efficient heating and cooling:
+✅ [Mini-Split Installation](https://berkscountyhvac.com/services/mini-split/installation/)
+✅ [Ductless System Repair](https://berkscountyhvac.com/services/ductless/repair/)
+
+Generator Services
+Power outages can happen anytime. Stay prepared with our generator services:
+✅ [Generator Installation](https://berkscountyhvac.com/services/generators/installation/)
+✅ [Generator Repair](https://berkscountyhvac.com/services/generators/repair/)
+
+Why Choose Berks County HVAC?
+✔ **Experienced Technicians** – Our team is trained and certified to handle all HVAC systems.
+✔ **Local Experts** – We understand the unique climate challenges in Reading, PA.
+✔ **24/7 Emergency Service** – We’re here when you need us most.
+
+Schedule Your HVAC Service in Reading Today!
+Don’t wait until your HVAC system breaks down—contact us today for expert installation, repairs, and maintenance. Call us or visit our [Contact Page](https://berkscountyhvac.com/contact/) to schedule an appointment.
+
+    `
+  }, 
+  {
     title: "Reliable HVAC Services in Hamburg, PA: Keeping Your Home Comfortable Year-Round",
     description: "Discover reliable and professional HVAC services in Hamburg, PA. From AC repairs to heating installations, our experienced technicians ensure your home stays comfortable year-round.",
     publishDate: new Date('2025-01-29'),
