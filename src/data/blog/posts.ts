@@ -2,6 +2,57 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+    title: "How Steel Tariffs Affect Your HVAC System in Pennsylvania",
+    description: "Learn how steel tariffs and other trade policies impact HVAC prices, availability, and repairs for homeowners in Pennsylvania.",
+    publishDate: new Date('2025-02-12'),
+    category: "HVAC Industry News",
+    slug: "steel-tariffs-hvac-pennsylvania",
+    featured: true,
+    content: `
+
+## What Do Steel Tariffs Mean for Your HVAC System?
+
+Steel tariffs have a direct impact on HVAC systems, from new installations to repair costs. With Pennsylvania experiencing fluctuating prices in the heating and cooling industry, it’s important for homeowners to understand how trade policies can affect their budget and comfort.
+
+## How Do Steel Tariffs Impact HVAC Costs?
+HVAC systems rely on steel for critical components like furnaces, air conditioner casings, ductwork, and heat exchangers. When tariffs increase the price of imported steel, manufacturers pass those costs to consumers, affecting:
+
+#### Higher Equipment Prices: Tariffs on steel mean manufacturers must pay more for raw materials, leading to increased HVAC system prices.
+
+#### More Expensive Repairs: Replacement parts like heat exchangers and evaporator coils also become more costly, making repairs pricier.
+
+#### Potential Equipment Shortages: If manufacturers scale back production due to higher costs, HVAC units may be harder to find, leading to delays in installations.
+
+### What Does This Mean for Pennsylvania Homeowners?
+For Pennsylvania residents, steel tariffs and supply chain disruptions can translate to:
+
+#### Higher upfront costs for HVAC replacements.
+#### Longer wait times for new equipment and repairs.
+#### Increased demand for local, U.S.-manufactured HVAC systems.
+
+If you’re in areas like [Reading, PA](https://berkscountyhvac.com/locations/reading/) or [Wyomissing, PA](https://berkscountyhvac.com/locations/wyomissing/), it’s wise to plan ahead for HVAC needs.
+
+## Ways to Save on HVAC Costs Despite Tariffs
+
+Although tariffs can increase HVAC expenses, there are ways to keep costs manageable:
+
+### 1. Schedule Preventive Maintenance
+Regular [HVAC maintenance](https://berkscountyhvac.com/services/cooling/maintenance/) helps prevent expensive breakdowns, reducing the need for costly parts that might be affected by tariffs.
+
+### 2. Consider Energy-Efficient Upgrades
+Energy-efficient HVAC systems reduce operating costs, helping to offset higher installation prices. Explore [high-efficiency heating options](https://berkscountyhvac.com/services/heating/installation/) to maximize savings.
+
+### 3. Look for Financing and Rebates
+Many Pennsylvania homeowners can take advantage of rebates on new systems. Check for utility rebates or financing options to ease the impact of rising costs.
+
+### Plan Ahead for HVAC Upgrades
+If you’re thinking about replacing or repairing your HVAC system, now is the time to act. With steel tariffs potentially driving up costs further, securing an installation or repair sooner can save you money.
+
+For professional HVAC service in Pennsylvania, [contact us today](https://berkscountyhvac.com/contact/) to schedule an estimate and stay ahead of price hikes.
+
+    `
+  },
+  {
     title: "The Ultimate Guide to HVAC Services in Reading, PA: Heating, Cooling & More",
     description: "Looking for reliable HVAC services in Reading, PA? Our expert team offers heating, cooling, ductwork, generator services, and more to keep your home comfortable year-round.",
     publishDate: new Date('2025-01-30'),
