@@ -2,6 +2,63 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+    title: "How Current Tariffs Could Affect HVAC Costs in Berks County, PA",
+    description: "Explore how new tariffs may impact HVAC system pricing and repairs across Berks County, including Reading, Wyomissing, and Kutztown. Learn what homeowners can do to prepare and save.",
+    publishDate: new Date('2025-05-05'),
+    category: "HVAC News & Tips",
+    slug: "hvac-tariffs-impact-berks-county",
+    featured: true,
+    content: `
+  
+  ## How Current Tariffs Could Affect HVAC Costs in Berks County, PA
+  
+  Homeowners across Berks County — from **Reading** to **Fleetwood**, **Wyomissing** to **Kutztown** — are beginning to feel the ripple effects of shifting global trade policies. With recent changes in tariffs, especially those impacting metals and electronics, the HVAC industry is seeing a surge in costs. If you’re planning an HVAC repair or replacement soon, it’s essential to understand how these economic shifts might influence your budget.
+  
+  ### What Are Tariffs and Why Do They Matter?
+  
+  Tariffs are taxes imposed on imported goods. In the HVAC industry, that often includes critical components like compressors, aluminum coils, copper wiring, and even entire AC units or furnaces. When tariffs go up, so do the prices of these parts — and that can directly affect service costs for homeowners.
+  
+  ### What This Means for HVAC Repairs and Installations in Berks County
+  
+  If you're in **Boyertown**, **Hamburg**, or **Leesport**, here's what you might notice:
+  
+  - **Higher Equipment Costs**: Replacement parts, new AC units, and furnaces may be priced higher due to increased manufacturing and import costs.
+  - **Longer Wait Times**: With supply chain disruptions, some components may take longer to arrive, delaying repairs or installations.
+  - **Increased Demand for Repairs**: Homeowners may choose to repair older systems rather than replace them, leading to a spike in demand for skilled technicians.
+  
+  ### How to Prepare and Save on HVAC Services
+  
+  If you live in **Sinking Spring**, **Birdsboro**, or **West Reading**, here’s how to stay ahead of tariff-related HVAC expenses:
+  
+  #### 1. **Book Repairs Early**
+  Prices on HVAC repairs could rise as supply chain pressures continue. Don’t wait until peak summer to fix a struggling AC or heating unit.
+  
+  #### 2. **Consider Energy-Efficient Upgrades**
+  While new systems may cost more up front, energy-efficient models often qualify for rebates and reduce long-term energy bills. Our [AC installation services](https://berkscountyhvac.com/services/cooling/ac-installation/) and [heating upgrades](https://berkscountyhvac.com/services/heating/installation/) are tailored for Berks County climates.
+  
+  #### 3. **Stick with Local Experts**
+  Working with a local HVAC company means better access to parts, faster service, and insight into cost-saving solutions for your specific area, whether you're in **Shillington**, **Blandon**, or **Bechtelsville**.
+  
+  #### 4. **Maintain Your Current System**
+  Preventative care goes a long way. Regular tune-ups and cleanings can delay the need for costly replacements. Check out our [heating repair services](https://berkscountyhvac.com/services/heating/repair/) and ductwork maintenance options to keep your system running smoothly.
+  
+  ### Why Choose Berks County HVAC?
+  
+  At Berks County HVAC, we stay ahead of industry changes — including tariffs — to help you make smart, cost-effective decisions. Our team proudly serves the entire county, from **Douglassville** to **Bethel**, with honest pricing, fast service, and expert solutions.
+  
+  ### Final Thoughts
+  
+  Tariffs may be beyond your control, but your HVAC costs don’t have to be. By planning ahead and working with a trusted local provider, you can minimize the impact on your comfort — and your wallet.
+  
+  If you’re in **Laureldale**, **Kempton**, **Oley**, or any corner of Berks County, reach out to our team for personalized HVAC advice and service you can count on.
+  
+  ---
+  
+  [Explore Our Services](https://berkscountyhvac.com/services/) | [Contact Us](https://berkscountyhvac.com/contact) for expert HVAC guidance today.
+  
+    `
+  },  
+  {
     title: "How Steel Tariffs Affect Your HVAC System in Pennsylvania",
     description: "Learn how steel tariffs and other trade policies impact HVAC prices, availability, and repairs for homeowners in Pennsylvania.",
     publishDate: new Date('2025-02-12'),
