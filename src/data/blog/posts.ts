@@ -2,6 +2,85 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+    title: "Stay Cool This Summer: Essential HVAC Tips for Berks County Residents",
+    description: "As summer temperatures rise, homeowners in Reading, Wyomissing, and Mohrsville need to ensure their HVAC systems are ready. Get tips to keep your system efficient and your home cool.",
+    publishDate: new Date('2025-05-12'),
+    category: "Cooling",
+    slug: "summer-hvac-tips-berks-county",
+    featured: true,
+    content: `
+  
+  ## Stay Cool This Summer: Essential HVAC Tips for Berks County Residents
+  
+  Summer in Berks County is getting hotter each year—and your HVAC system needs to be ready. Whether you're in bustling [Reading](https://berkscountyhvac.com/locations/reading/), scenic [Wyomissing](https://berkscountyhvac.com/locations/wyomissing/), or the quiet community of [Mohrsville](https://berkscountyhvac.com/locations/), a reliable air conditioning system is a must. Here are our top HVAC tips to beat the heat, lower your energy bills, and stay comfortable all season long.
+  
+  ---
+  
+  ### Why Summer Puts Extra Strain on Your HVAC System
+  
+  When outdoor temperatures soar, your air conditioner works overtime to maintain comfort. This added strain can expose weaknesses in your system—especially if it hasn’t been maintained recently. From clogged filters to low refrigerant levels, even minor issues can lead to breakdowns during heatwaves.
+  
+  ---
+  
+  ## Top HVAC Tips to Prepare for the Berks County Summer
+  
+  ### 1. **Schedule a Pre-Summer HVAC Tune-Up**
+  Before the peak heat arrives, schedule a professional inspection. Our [AC maintenance service](https://berkscountyhvac.com/services/cooling/maintenance/) includes filter changes, coil cleaning, refrigerant checks, and airflow testing—everything you need to avoid mid-summer emergencies.
+  
+  ### 2. **Upgrade to a Smart Thermostat**
+  A programmable thermostat can help reduce energy use by adjusting temperatures when you’re away. This is especially helpful in cities like [Kutztown](https://berkscountyhvac.com/locations/kutztown/) or [Boyertown](https://berkscountyhvac.com/locations/boyertown/), where daily schedules may fluctuate with school or work.
+  
+  ### 3. **Change Air Filters Regularly**
+  A clogged filter reduces airflow and forces your system to work harder. Check your air filter monthly and replace it every 1–3 months for optimal performance.
+  
+  ### 4. **Seal Windows and Doors**
+  Prevent cool air from escaping your home by sealing leaks around windows and doors. This simple step can significantly lower your cooling costs—especially in older homes found in [Fleetwood](https://berkscountyhvac.com/locations/fleetwood/) or [Hamburg](https://berkscountyhvac.com/locations/hamburg/).
+  
+  ### 5. **Clear Debris Around Your Outdoor Unit**
+  Leaves, grass, and other debris around your outdoor AC unit can block airflow. Keep the area around it clean and free of obstructions to help your system breathe and operate efficiently.
+  
+  ---
+  
+  ## Special Considerations for Homeowners in Mohrsville, PA
+  
+  If you live in or near Mohrsville, you're likely familiar with the area's mix of rural homes and varying terrain. Homes with less insulation or older HVAC systems can struggle more during high heat.
+  
+  **Here’s what Mohrsville homeowners should focus on:**
+  
+  - **Inspect Your Ductwork:** Older ductwork may have leaks that waste energy.
+  - **Evaluate Your Insulation:** Ensure attics and crawl spaces are properly insulated to keep cool air in.
+  - **Check for Power Surge Protection:** Summer storms in rural areas can damage your HVAC’s electrical components.
+  
+  Our local technicians are familiar with the unique needs of Mohrsville homes and can provide personalized service tailored to your property.
+  
+  [Get in Touch with Our Mohrsville HVAC Team](https://berkscountyhvac.com/contact)
+  
+  ---
+  
+  ## Serving Cities Across Berks County
+  
+  At Berks County HVAC, we proudly serve cities across the region, including:
+  
+  - [Reading](https://berkscountyhvac.com/locations/reading/)
+  - [Wyomissing](https://berkscountyhvac.com/locations/wyomissing/)
+  - [Kutztown](https://berkscountyhvac.com/locations/kutztown/)
+  - [Boyertown](https://berkscountyhvac.com/locations/boyertown/)
+  - [Fleetwood](https://berkscountyhvac.com/locations/fleetwood/)
+  - [Hamburg](https://berkscountyhvac.com/locations/hamburg/)
+  - [Mohrsville](https://berkscountyhvac.com/locations/)
+  
+  ---
+  
+  ## Don’t Let Summer Catch You Off Guard
+  
+  If your AC is making strange noises, struggling to cool your space, or hasn’t been serviced in over a year, now is the time to act. Prevent costly repairs, stay energy-efficient, and enjoy peace of mind with help from your local experts.
+  
+  [Book Your Summer HVAC Service Today](https://berkscountyhvac.com/contact)
+  
+  ---
+  `
+  },  
+  {
     title: "How Current Tariffs Could Affect HVAC Costs in Berks County, PA",
     description: "Explore how new tariffs may impact HVAC system pricing and repairs across Berks County, including Reading, Wyomissing, and Kutztown. Learn what homeowners can do to prepare and save.",
     publishDate: new Date('2025-05-05'),
