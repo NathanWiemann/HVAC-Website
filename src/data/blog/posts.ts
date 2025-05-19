@@ -2,6 +2,124 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+  title: "Common Cooling Problems and How Wyomissing Homeowners Can Fix Them",
+  description: "Learn about common AC issues in Wyomissing and Berks County, how to fix them, and when it's time to install a new cooling system with help from Berks County HVAC.",
+  publishDate: new Date('2025-05-19'),
+  category: "Cooling",
+  slug: "cooling-problems-solutions-berks-county-wyomissing",
+  featured: true,
+  content: `
+
+## Common Cooling Problems and How Wyomissing Homeowners Can Fix Them
+
+As summer temperatures climb in Berks County, the last thing you need is a malfunctioning air conditioner. Whether you’re relaxing at home in [Wyomissing](https://berkscountyhvac.com/locations/wyomissing/) or running a business in [Reading](https://berkscountyhvac.com/locations/reading/), a reliable cooling system is essential. Let’s explore the most common cooling problems, their potential causes, and how Berks County HVAC can help you stay cool all season long.
+
+---
+
+### Problem #1: AC Blowing Warm Air
+
+#### 🚫 The Issue:
+Your system runs—but the air coming from the vents isn’t cold.
+
+#### ✅ Possible Causes:
+- Dirty air filters
+- Refrigerant leaks
+- Thermostat issues
+- Failing compressor
+
+#### 🔧 Solution:
+Start by replacing your air filter. If that doesn’t solve it, contact a technician to check refrigerant levels or assess the compressor.
+
+[Need a Diagnostic? Contact Us Today](https://berkscountyhvac.com/contact)
+
+---
+
+### Problem #2: Weak Airflow
+
+#### 🚫 The Issue:
+Air is cool, but the flow is weak, making it hard to cool larger rooms in your home.
+
+#### ✅ Possible Causes:
+- Blocked or dirty ducts
+- Failing blower motor
+- Leaky ductwork
+
+#### 🔧 Solution:
+Have your ductwork inspected and cleaned. Our team offers [ductwork repair and maintenance](https://berkscountyhvac.com/services/ductwork/repair/) for Wyomissing and beyond.
+
+---
+
+### Problem #3: AC Unit Constantly Cycling On and Off
+
+#### 🚫 The Issue:
+Short cycling increases wear and tear and spikes your utility bill.
+
+#### ✅ Possible Causes:
+- Oversized system
+- Clogged air filters
+- Malfunctioning thermostat
+- Low refrigerant
+
+#### 🔧 Solution:
+Replace filters and test your thermostat. If the problem continues, it may be time to install a new, properly sized system.
+
+[Explore Cooling Installation Options](https://berkscountyhvac.com/services/cooling/ac-installation/)
+
+---
+
+### Problem #4: Strange Noises or Odors
+
+#### 🚫 The Issue:
+Unusual rattling, buzzing, or musty smells are warning signs of internal issues.
+
+#### ✅ Possible Causes:
+- Loose parts
+- Mold in ducts or evaporator coils
+- Electrical problems
+
+#### 🔧 Solution:
+Turn off your system and call a professional immediately. These issues can lead to serious damage or even health concerns.
+
+---
+
+## Cooling Help for Wyomissing and Surrounding Berks County Cities
+
+Whether you're dealing with frequent breakdowns in [Fleetwood](https://berkscountyhvac.com/locations/fleetwood/) or warm air blowing in [Kutztown](https://berkscountyhvac.com/locations/kutztown/), Berks County HVAC has solutions designed for the unique demands of Pennsylvania’s summer climate.
+
+### When It's Time to Replace Your Cooling System
+
+If your system is:
+
+- Over 10–15 years old
+- Breaking down frequently
+- Using outdated technology
+- Failing to cool your home evenly
+
+…you could benefit from a new, energy-efficient air conditioner. We offer expert [AC installations](https://berkscountyhvac.com/services/cooling/ac-installation/) throughout Wyomissing, [Boyertown](https://berkscountyhvac.com/locations/boyertown/), and [Hamburg](https://berkscountyhvac.com/locations/hamburg/).
+
+---
+
+## Why Choose Berks County HVAC?
+
+- 🔧 **Certified Technicians** with years of experience
+- ⚡ **Fast Response** throughout Wyomissing and beyond
+- 💰 **Upfront Pricing** with no surprise fees
+- 🌱 **Energy-Efficient Systems** to lower your utility bills
+
+We proudly serve Wyomissing and nearby areas including [Sinking Spring](https://berkscountyhvac.com/locations/sinking-spring/), [Leesport](https://berkscountyhvac.com/locations/leesport/), and [Birdsboro](https://berkscountyhvac.com/locations/birdsboro/).
+
+---
+
+## Request Your Free Estimate Today
+
+Don’t wait until your system fails on the hottest day of the year. Let our team provide a fast quote and expert recommendation to restore your comfort.
+
+[Contact Berks County HVAC](https://berkscountyhvac.com/contact) for cooling repairs, maintenance, or a brand-new AC installation in Wyomissing and throughout Berks County.
+
+Stay cool. Stay comfortable. Trust Berks County HVAC.
+`
+},
+{
     title: "Stay Cool This Summer: Essential HVAC Tips for Berks County Residents",
     description: "As summer temperatures rise, homeowners in Reading, Wyomissing, and Mohrsville need to ensure their HVAC systems are ready. Get tips to keep your system efficient and your home cool.",
     publishDate: new Date('2025-05-12'),
