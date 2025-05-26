@@ -2,6 +2,76 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+  title: "Get Your AC Ready: End-of-May HVAC Tips for Hamburg, PA Homeowners",
+  description: "As the last week of May brings rising temperatures to Hamburg, PA, here’s what you need to do to prepare your HVAC system for the summer heat. Stay ahead of AC breakdowns and high energy bills with these expert tips.",
+  publishDate: new Date('2025-05-19'),
+  category: "Cooling",
+  slug: "end-of-may-hvac-prep-hamburg-pa",
+  featured: true,
+  content: `
+
+## Get Your AC Ready: End-of-May HVAC Tips for Hamburg, PA Homeowners
+
+The last week of May has arrived in Hamburg, PA—and that means summer is just around the corner. As we wrap up the spring season, temperatures are already beginning to rise, and your air conditioning system is about to face its biggest test of the year.
+
+To stay cool and avoid costly surprises, now is the time for Hamburg homeowners to prepare their HVAC systems. Whether you’re in the heart of [Hamburg](https://berkscountyhvac.com/locations/hamburg/) or nearby towns like Shoemakersville and Windsor Township, these tips will keep you comfortable and energy-efficient all season long.
+
+---
+
+## 1. Why May Is the Most Important Month for AC Maintenance
+
+Late spring in Pennsylvania brings fluctuating weather, pollen buildup, and the perfect window to service your cooling system before the summer heat sets in.
+
+### Here’s what you should check this week:
+- **Change your air filter** to prevent airflow blockages and allergy triggers.
+- **Inspect your outdoor unit** for leaves, grass clippings, and debris.
+- **Test your thermostat** to ensure it responds quickly and accurately.
+- **Schedule a professional AC tune-up** to check refrigerant levels, electrical connections, and cooling efficiency.
+
+A quick service call now can save you from breakdowns in July when HVAC companies are at their busiest. [Book your AC maintenance today](https://berkscountyhvac.com/contact) before the rush.
+
+---
+
+## 2. Common Early Summer Cooling Issues in Hamburg
+
+Hamburg homeowners often experience a few early warning signs that their HVAC system is struggling to keep up with rising temperatures:
+
+- **Uneven cooling** in different rooms
+- **High humidity** despite the AC running
+- **Noisy units or strange smells**
+- **Short-cycling (frequent on/off behavior)**
+
+If you notice any of these issues, it’s a good time to schedule a system evaluation. Our team at Berks County HVAC provides expert diagnostics and repairs across [Hamburg](https://berkscountyhvac.com/locations/hamburg/) and surrounding areas.
+
+---
+
+## 3. Is It Time to Upgrade Your AC in Hamburg, PA?
+
+If your AC is over 12–15 years old, constantly breaking down, or causing your energy bills to spike, a new system could save you money in the long run.
+
+### Benefits of Upgrading:
+- **Higher energy efficiency**
+- **Quieter operation**
+- **Improved humidity control**
+- **Smart thermostat compatibility**
+
+At Berks County HVAC, we offer [professional AC installations](https://berkscountyhvac.com/services/cooling/ac-installation/) in Hamburg tailored to your home’s size, layout, and comfort goals.
+
+---
+
+## Ready to Beat the Summer Heat?
+
+Don’t wait for a mid-season emergency. Whether you're due for a seasonal checkup or interested in upgrading your cooling system, Berks County HVAC is here to help Hamburg residents stay ahead of the summer heat.
+
+### ✅ Serving Hamburg, Shoemakersville, and all of Northern Berks County
+### ✅ Trusted local experts with years of experience
+### ✅ Free estimates and honest advice
+
+[Schedule Your Service Now](https://berkscountyhvac.com/contact) and make the most of the last week of May with peace of mind and total comfort.
+
+    `
+},
+  {
   title: "Common Cooling Problems and How Wyomissing Homeowners Can Fix Them",
   description: "Learn about common AC issues in Wyomissing and Berks County, how to fix them, and when it's time to install a new cooling system with help from Berks County HVAC.",
   publishDate: new Date('2025-05-19'),
