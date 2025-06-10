@@ -2,6 +2,74 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+  title: "Is Your AC Ready for Summer? Morgantown, PA Homeowners Should Read This",
+  description: "As summer temperatures rise in Morgantown, PA, make sure your cooling system is ready to keep your home comfortable. Discover expert tips and local HVAC services to stay cool all season long.",
+  publishDate: new Date('2025-06-10'),
+  category: "Cooling",
+  slug: "summer-ac-prep-morgantown-pa",
+  featured: true,
+  content: `
+
+## Is Your AC Ready for Summer? Morgantown, PA Homeowners Should Read This
+
+With rising temperatures and humidity rolling into Morgantown, Pennsylvania, your home’s cooling system is about to become your best friend. But is your air conditioner ready to handle the summer heat?
+
+Don’t wait until the first heatwave to find out your AC isn't working. Here's how Morgantown homeowners can prepare for peak cooling season—and why calling a professional HVAC technician could save you money and discomfort in the long run.
+
+### Why Early AC Preparation Matters in Morgantown, PA
+
+Summers in Berks County are getting hotter and more humid, which means your cooling system will be working harder than ever. Prepping your air conditioning unit now ensures:
+
+- **Reliable performance on the hottest days**
+- **Lower monthly energy bills**
+- **Fewer chances of emergency breakdowns**
+- **Longer system lifespan**
+
+### 5 Signs Your AC Needs Attention
+
+Not sure if your unit is ready? Watch for these signs:
+
+1. **Strange noises** – Rattling or buzzing can signal loose components or motor issues.
+2. **Inconsistent cooling** – Uneven temperatures point to airflow problems or refrigerant issues.
+3. **Weak airflow** – This could mean a clogged filter or duct obstruction.
+4. **High energy bills** – A spike could indicate your system is working overtime.
+5. **Musty odors** – Mold or mildew could be building up in your ducts or coils.
+
+If you’ve noticed any of these, it’s time to call a pro.
+
+### Essential Services to Get Your Cooling System Summer-Ready
+
+#### ✅ [AC Cleaning](https://berkscountyhvac.com/services/cooling/cleaning/)
+
+Dust, debris, and mold can build up inside your system, making it less efficient. A professional cleaning restores airflow and improves air quality.
+
+#### ✅ [AC Repair Services](https://berkscountyhvac.com/services/cooling/ac-repair/)
+
+Don’t wait for a full breakdown. If your system is acting up, our technicians can diagnose and fix issues before they escalate.
+
+#### ✅ [AC Installation](https://berkscountyhvac.com/services/cooling/ac-installation/)
+
+If your unit is 10–15 years old, you could save significantly by upgrading to a high-efficiency model.
+
+#### ✅ [Cooling System Add-Ons](https://berkscountyhvac.com/services/cooling/add-ons/)
+
+Consider smart thermostats or zoning systems to increase efficiency and comfort in specific areas of your home.
+
+### Local Experts Serving Morgantown and Beyond
+
+At [Berks County HVAC](https://berkscountyhvac.com/), we proudly serve Morgantown and neighboring communities with top-rated air conditioning services. Our experienced technicians know the unique cooling needs of homes in this area.
+
+Explore our nearby [locations](https://berkscountyhvac.com/locations/) or get in touch today to schedule a tune-up before summer heat arrives in full force.
+
+### Stay Cool, Stay Comfortable—Act Now!
+
+The best time to prep your AC is **before** temperatures peak. Don’t wait for a breakdown in July. Whether you need a quick repair, a full system upgrade, or just a seasonal checkup, Berks County HVAC is here to help Morgantown stay cool all summer.
+
+[Contact our team today](https://berkscountyhvac.com/contact) and beat the heat before it beats you.
+
+`
+},
+  {
   title: "Get Your AC Ready: End-of-May HVAC Tips for Hamburg, PA Homeowners",
   description: "As the last week of May brings rising temperatures to Hamburg, PA, here’s what you need to do to prepare your HVAC system for the summer heat. Stay ahead of AC breakdowns and high energy bills with these expert tips.",
   publishDate: new Date('2025-05-19'),
