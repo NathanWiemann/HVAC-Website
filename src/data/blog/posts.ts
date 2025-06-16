@@ -2,6 +2,66 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+  title: "Rainy Season HVAC Care in Birdsboro, PA: What to Do If Your Unit Gets Flooded",
+  description: "Learn essential HVAC maintenance tips for rainy weather in Birdsboro, PA, including how to protect your system from flooding and what steps to take if water damage occurs.",
+  publishDate: new Date('2025-06-16'),
+  category: "HVAC Maintenance",
+  slug: "rainy-season-hvac-care-birdsboro-pa",
+  featured: true,
+  content: `
+## Protecting Your HVAC System During the Rainy Season in Birdsboro, PA
+
+With the arrival of heavy spring and summer rainstorms, homeowners in Birdsboro, PA, need to stay vigilant about HVAC system protection. Excessive rainfall can lead to flooding, and your HVAC unit is particularly vulnerable when water accumulates around or inside it.
+
+Here’s how to care for your HVAC unit during rainy weather—and what to do if it gets flooded.
+
+## Why Flooding Poses a Risk to Your HVAC System
+
+Heavy rains can submerge your outdoor unit, damaging electrical components, reducing system efficiency, or even rendering the entire unit inoperable. Moisture can also lead to mold growth inside your ductwork or air handler, affecting your indoor air quality.
+
+## Tips to Prevent Flood Damage to Your HVAC Unit
+
+### 1. **Elevate Your Outdoor Unit**
+If your property is prone to flooding, ask an HVAC professional about raising the condenser on a sturdy platform to keep it above water level.
+
+### 2. **Ensure Proper Drainage**
+Check that the ground around your unit slopes away to prevent water pooling. Consider adding gravel or installing a French drain to improve drainage.
+
+### 3. **Clear Debris Regularly**
+Keep leaves, sticks, and debris away from your unit to reduce the risk of clogged drainage and restricted airflow.
+
+### 4. **Inspect and Seal Ductwork**
+Water can seep into your duct system and cause mold or damage. Make sure all joints are sealed, especially if your ducts run through basements or crawlspaces.
+
+## What to Do If Your HVAC Unit Gets Flooded
+
+### 1. **Turn Off the System Immediately**
+Shut off the power to your HVAC unit at the breaker to prevent electrical hazards and further damage.
+
+### 2. **Do Not Attempt to Restart It**
+Trying to power on a water-damaged unit can lead to permanent damage or safety risks.
+
+### 3. **Call a Licensed HVAC Technician**
+Our [Birdsboro HVAC team](https://berkscountyhvac.com/locations/birdsboro/) can inspect and assess the damage safely. We’ll determine if the unit can be repaired or if replacement is necessary.
+
+### 4. **Schedule a Post-Flood Inspection**
+Even if the water recedes quickly, internal damage or contamination may persist. A thorough professional inspection ensures your system is safe and functional.
+
+## Regular Maintenance Matters
+
+Routine HVAC maintenance goes a long way in extending your system’s life and improving its resilience against the elements. If your unit hasn’t been serviced recently, now is the perfect time to [schedule an inspection](https://berkscountyhvac.com/contact/).
+
+## Stay Dry and Comfortable with Berks County HVAC
+
+From emergency HVAC repairs to preventive maintenance, our Birdsboro team is ready to help you weather any storm. Reach out today to protect your HVAC investment and keep your home safe and comfortable.
+
+[Schedule Your Service Now](https://berkscountyhvac.com/contact/)
+
+---
+  `
+},
+
+  {
   title: "Is Your AC Ready for Summer? Morgantown, PA Homeowners Should Read This",
   description: "As summer temperatures rise in Morgantown, PA, make sure your cooling system is ready to keep your home comfortable. Discover expert tips and local HVAC services to stay cool all season long.",
   publishDate: new Date('2025-06-10'),
