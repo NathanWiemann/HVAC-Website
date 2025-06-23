@@ -2,6 +2,57 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+  title: "Surviving the Heat: Top Tips to Keep Your Home Cool During a Berks County Heatwave",
+  description: "With temperatures soaring in Berks County, it’s more important than ever to keep your home cool and comfortable. Discover expert HVAC tips to stay chill, save energy, and protect your family from the heat.",
+  publishDate: new Date('2025-06-23'),
+  category: "Cooling",
+  slug: "berks-county-heatwave-cooling-tips",
+  featured: true,
+  content: `
+## Beat the Heat with Smart Cooling Tips
+
+Berks County is currently experiencing extreme summer heat, and your home's comfort depends on how well you manage indoor temperatures. Here are the top HVAC expert tips to keep your home cool, safe, and energy-efficient during a heatwave.
+
+## 1. Optimize Your AC Settings
+
+Set your thermostat to 78°F when you're home and a few degrees higher when you're away. This balance keeps you comfortable while reducing strain on your system. For best results, consider upgrading to a smart thermostat that adjusts automatically based on your routine.
+
+## 2. Ensure Your AC Is in Peak Condition
+
+Your air conditioner works hardest during heatwaves. Make sure it's ready by scheduling routine [AC maintenance](https://berkscountyhvac.com/services/cooling/maintenance/). A quick tune-up can prevent unexpected breakdowns and improve efficiency.
+
+## 3. Know When You Need a Repair
+
+Is your AC blowing warm air, making strange noises, or cycling too frequently? These are warning signs that something's wrong. Don’t wait—get fast, reliable [AC repair](https://berkscountyhvac.com/services/cooling/ac-repair/) to stay ahead of the heat.
+
+## 4. Consider a Mini-Split System
+
+If certain rooms in your home are hotter than others, a ductless [mini-split installation](https://berkscountyhvac.com/services/mini-split/installation/) offers zoned cooling with high energy efficiency. It’s an ideal solution for home offices, sunrooms, and upstairs bedrooms.
+
+## 5. Keep It Clean
+
+Dirty filters and clogged systems reduce airflow and efficiency. Replace your filters regularly and schedule professional [AC cleaning](https://berkscountyhvac.com/services/cooling/cleaning/) to keep cool air flowing.
+
+## 6. Use Fans to Boost Circulation
+
+Ceiling fans and portable fans help circulate air, making rooms feel cooler. Run ceiling fans counterclockwise in the summer to push air downward.
+
+## 7. Block Out the Sun
+
+Close blinds and curtains during peak sunlight hours to keep your home cooler naturally. Blackout curtains can reduce indoor temperatures significantly.
+
+## 8. Avoid Heat-Producing Appliances
+
+Limit the use of ovens, stoves, and dryers during the hottest parts of the day. Switch to grilling outdoors or using small appliances like slow cookers.
+
+## Stay Cool with Berks County HVAC
+
+Extreme heat doesn't have to mean extreme discomfort. Whether you need AC repair, installation, or cleaning, [Berks County HVAC](https://berkscountyhvac.com/services/) has your comfort covered.
+
+[Contact us today](https://berkscountyhvac.com/contact) to schedule a service call and stay cool this summer!
+`
+},
+  {
   title: "Rainy Season HVAC Care in Birdsboro, PA: What to Do If Your Unit Gets Flooded",
   description: "Learn essential HVAC maintenance tips for rainy weather in Birdsboro, PA, including how to protect your system from flooding and what steps to take if water damage occurs.",
   publishDate: new Date('2025-06-16'),
