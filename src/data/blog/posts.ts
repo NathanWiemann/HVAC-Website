@@ -2,6 +2,69 @@ import type { BlogPost } from '../../types/blog';
 
 export const posts: BlogPost[] = [
   {
+  title: "Summer HVAC Tips for Blandon, PA: Stay Cool & Keep Your System Running Smoothly",
+  description: "Discover expert tips to beat the heat in Blandon, PA! Learn how to keep your home cool and your HVAC system in top shape all summer long.",
+  publishDate: new Date('2025-07-14'),
+  category: "HVAC Maintenance",
+  slug: "summer-hvac-tips-blandon",
+  featured: true,
+  content: `
+
+## Stay Cool and Comfortable This Summer in Blandon, PA
+
+Summers in Blandon can bring sweltering heat, making your air conditioner a vital part of your home comfort. Whether you're running your AC daily or using a ductless mini-split system, regular upkeep and smart cooling habits go a long way in keeping your space cool and your energy bills low.
+
+### 1. Schedule Pre-Summer AC Maintenance
+
+Before peak summer hits, get your AC system inspected and tuned by a professional. Routine maintenance helps:
+
+- Improve energy efficiency  
+- Prevent unexpected breakdowns  
+- Extend the lifespan of your system  
+
+[Explore Our Cooling Services in Blandon](https://berkscountyhvac.com/locations/blandon/)
+
+### 2. Replace or Clean Your Air Filters
+
+Dirty filters restrict airflow, strain your system, and reduce indoor air quality. Replace filters every 1–3 months, especially during heavy usage.
+
+Need help with filter replacement? We offer full [AC Cleaning Services](https://berkscountyhvac.com/services/cooling/cleaning/) to keep your unit running fresh.
+
+### 3. Use a Programmable Thermostat
+
+A smart thermostat can reduce your energy usage by automatically adjusting your home’s temperature when you’re away. Set it a few degrees higher during work hours to save on cooling costs without sacrificing comfort.
+
+### 4. Keep Your Outdoor Unit Clear
+
+Ensure your outdoor condenser has at least two feet of clearance. Remove grass, leaves, or debris that could block airflow. A clean unit runs cooler and uses less energy.
+
+### 5. Seal Leaky Doors and Windows
+
+Don’t let cool air escape. Seal gaps around windows and doors to keep conditioned air inside. For more extensive issues, our [ductwork maintenance services](https://berkscountyhvac.com/services/ductwork/maintenance/) can help prevent leaks in your system.
+
+### 6. Use Fans to Circulate Air
+
+Ceiling or box fans can supplement your AC by helping distribute cool air more evenly. This reduces the need to set the thermostat too low.
+
+### 7. Consider an Upgrade if Your System is Over 10 Years Old
+
+Older AC systems are often less efficient and more prone to breakdowns. If your unit struggles to keep up, consider a modern upgrade. We provide [energy-efficient AC installation](https://berkscountyhvac.com/services/cooling/ac-installation/) options tailored to homes in Blandon.
+
+### Bonus: Don’t Ignore Strange Noises or Warm Air
+
+If your system is making unusual sounds or blowing warm air, schedule a fast [AC repair](https://berkscountyhvac.com/services/cooling/ac-repair/) to avoid a total breakdown in the middle of a heatwave.
+
+---
+
+## Beat the Heat with Expert HVAC Help in Blandon
+
+Berks County HVAC proudly serves the Blandon area with reliable, local HVAC expertise. From proactive summer maintenance to emergency repairs, we’re here to keep your home cool and comfortable.
+
+[Contact Us Today](https://berkscountyhvac.com/contact) to schedule your summer service call and stay ahead of the heat.
+
+  `
+},
+  {
   title: "Surviving the Heat: Top Tips to Keep Your Home Cool During a Berks County Heatwave",
   description: "With temperatures soaring in Berks County, it’s more important than ever to keep your home cool and comfortable. Discover expert HVAC tips to stay chill, save energy, and protect your family from the heat.",
   publishDate: new Date('2025-06-23'),
